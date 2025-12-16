@@ -170,7 +170,7 @@ class DJControlApp:
                         current = getattr(self, control_name)
                         delta = msg.value - 128 if msg.value > 64 else msg.value  # Relative mode
                         new_value = current + delta
-                        new_value = new_value % 256  # Wrap around 0-127
+                        # new_value = new_value % 256  # Wrap around 0-127
                         setattr(self, control_name, new_value)
                     else:
                         setattr(self, control_name, msg.value)

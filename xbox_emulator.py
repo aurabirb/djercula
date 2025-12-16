@@ -47,6 +47,13 @@ class XboxEmulator:
         self.jog_a_angle: float = 0.0
         self.jog_b_angle: float = 0.0
         
+        # Last jogwheel values to detect changes
+        self._last_jog_a: int = 0
+        self._last_jog_b: int = 0
+        
+        # Track all pressed buttons to avoid reset() issues
+        self._pressed_buttons: set = set()
+        
         # Define control mappings - easy to extend!
         self._init_mappings()
     
@@ -120,6 +127,16 @@ class XboxEmulator:
                 "handler": self._handle_button,
                 "args": {"button": "guide"},
             },
+            
+            # Load buttons -> Back/Start
+            "load_a": {
+                "handler": self._handle_button,
+                "args": {"button": "back"},
+            },
+            "load_b": {
+                "handler": self._handle_button,
+                "args": {"button": "start"},
+            },
         }
         
         # D-pad state tracking (need to combine for proper D-pad handling)
@@ -165,6 +182,9 @@ class XboxEmulator:
         self.gamepad.update()
         self.jog_a_angle = 0.0
         self.jog_b_angle = 0.0
+        self._last_jog_a = 0
+        self._last_jog_b = 0
+        self._pressed_buttons.clear()
         self.dpad_state = {k: False for k in self.dpad_state}
         self._last_values.clear()
     
@@ -220,14 +240,25 @@ class XboxEmulator:
     def _handle_jogwheel(self, value: int, stick: str):
         """
         Handle jogwheel input - maps rotation to stick circular motion.
-        Jogwheel encoder value is relative, accumulated to create rotation.
+        Jogwheel value is accumulated, we track the delta to create rotation.
         """
-        # Jogwheel values are typically 0-255 representing rotation
-        # Convert to angle delta
         if stick == "left":
-            # Accumulate angle based on jogwheel value
-            # Value around 0 means rotating, higher values = faster
-            angle_delta = (value / 256.0) * math.pi * 2
+            # Calculate delta from last value
+            delta = value - self._last_jog_a
+            self._last_jog_a = value
+            
+            # Handle wraparound (0-255)
+            if delta > 128:
+                delta -= 256
+            elif delta < -128:
+                delta += 256
+            
+            # Skip if no change
+            if delta == 0:
+                return
+            
+            # Convert delta to angle change (scale factor for sensitivity)
+            angle_delta = (delta / 32.0) * math.pi
             self.jog_a_angle += angle_delta
             self.jog_a_angle %= (math.pi * 2)
             
@@ -237,7 +268,18 @@ class XboxEmulator:
             self.gamepad.left_joystick_float(x_value_float=x, y_value_float=y)
         
         elif stick == "right":
-            angle_delta = (value / 256.0) * math.pi * 2
+            delta = value - self._last_jog_b
+            self._last_jog_b = value
+            
+            if delta > 128:
+                delta -= 256
+            elif delta < -128:
+                delta += 256
+            
+            if delta == 0:
+                return
+            
+            angle_delta = (delta / 32.0) * math.pi
             self.jog_b_angle += angle_delta
             self.jog_b_angle %= (math.pi * 2)
             
@@ -258,30 +300,30 @@ class XboxEmulator:
         left = self.dpad_state["left"]
         right = self.dpad_state["right"]
         
-        # Reset D-pad first
-        self.gamepad.reset()
+        # D-pad button constants
+        dpad_up = vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_UP
+        dpad_down = vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN
+        dpad_left = vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_LEFT
+        dpad_right = vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_RIGHT
         
-        # Handle all D-pad combinations
-        if up and left:
-            self.gamepad.press_button(vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_UP)
-            self.gamepad.press_button(vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_LEFT)
-        elif up and right:
-            self.gamepad.press_button(vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_UP)
-            self.gamepad.press_button(vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_RIGHT)
-        elif down and left:
-            self.gamepad.press_button(vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN)
-            self.gamepad.press_button(vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_LEFT)
-        elif down and right:
-            self.gamepad.press_button(vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN)
-            self.gamepad.press_button(vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_RIGHT)
-        elif up:
-            self.gamepad.press_button(vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_UP)
-        elif down:
-            self.gamepad.press_button(vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN)
-        elif left:
-            self.gamepad.press_button(vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_LEFT)
-        elif right:
-            self.gamepad.press_button(vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_RIGHT)
+        # Release all D-pad buttons first
+        for btn in [dpad_up, dpad_down, dpad_left, dpad_right]:
+            self.gamepad.release_button(btn)
+            self._pressed_buttons.discard(btn)
+        
+        # Press the appropriate D-pad buttons
+        if up:
+            self.gamepad.press_button(dpad_up)
+            self._pressed_buttons.add(dpad_up)
+        if down:
+            self.gamepad.press_button(dpad_down)
+            self._pressed_buttons.add(dpad_down)
+        if left:
+            self.gamepad.press_button(dpad_left)
+            self._pressed_buttons.add(dpad_left)
+        if right:
+            self.gamepad.press_button(dpad_right)
+            self._pressed_buttons.add(dpad_right)
     
     def _handle_button(self, pressed: bool, button: str):
         """Handle Xbox face button press"""
@@ -305,8 +347,10 @@ class XboxEmulator:
         xbox_button = button_map[button]
         if pressed:
             self.gamepad.press_button(xbox_button)
+            self._pressed_buttons.add(xbox_button)
         else:
             self.gamepad.release_button(xbox_button)
+            self._pressed_buttons.discard(xbox_button)
 
 
 # Convenience function to add new mappings
