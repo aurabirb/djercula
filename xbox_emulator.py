@@ -51,6 +51,14 @@ class XboxEmulator:
         self._last_jog_a: int = 0
         self._last_jog_b: int = 0
         
+        # Jog push state (True when touching the jog wheel)
+        self._jog_push_a: bool = False
+        self._jog_push_b: bool = False
+        
+        # Stick intensity (ramps up as jog is turned, 0.0 to 1.0)
+        self._stick_intensity_a: float = 0.0
+        self._stick_intensity_b: float = 0.0
+        
         # Track all pressed buttons to avoid reset() issues
         self._pressed_buttons: set = set()
         
@@ -78,6 +86,15 @@ class XboxEmulator:
             },
             "deck_b_jogwheel": {
                 "handler": self._handle_jogwheel,
+                "args": {"stick": "right"},
+            },
+            # Jog push -> controls stick active state
+            "jog_push_a": {
+                "handler": self._handle_jog_push,
+                "args": {"stick": "left"},
+            },
+            "jog_push_b": {
+                "handler": self._handle_jog_push,
                 "args": {"stick": "right"},
             },
         }
@@ -184,6 +201,10 @@ class XboxEmulator:
         self.jog_b_angle = 0.0
         self._last_jog_a = 0
         self._last_jog_b = 0
+        self._jog_push_a = False
+        self._jog_push_b = False
+        self._stick_intensity_a = 0.0
+        self._stick_intensity_b = 0.0
         self._pressed_buttons.clear()
         self.dpad_state = {k: False for k in self.dpad_state}
         self._last_values.clear()
@@ -237,10 +258,33 @@ class XboxEmulator:
         elif trigger == "right":
             self.gamepad.right_trigger(value=trigger_value)
     
+    def _handle_jog_push(self, pressed: bool, stick: str):
+        """Handle jog wheel touch state - sticks return to neutral when released"""
+        if stick == "left":
+            was_pushed = self._jog_push_a
+            self._jog_push_a = pressed
+            if pressed and not was_pushed:
+                # Just touched - reset intensity to start from 0
+                self._stick_intensity_a = 0.0
+            elif not pressed:
+                # Released - return stick to neutral
+                self._stick_intensity_a = 0.0
+                self.gamepad.left_joystick_float(x_value_float=0.0, y_value_float=0.0)
+        elif stick == "right":
+            was_pushed = self._jog_push_b
+            self._jog_push_b = pressed
+            if pressed and not was_pushed:
+                self._stick_intensity_b = 0.0
+            elif not pressed:
+                self._stick_intensity_b = 0.0
+                self.gamepad.right_joystick_float(x_value_float=0.0, y_value_float=0.0)
+    
     def _handle_jogwheel(self, value: int, stick: str):
         """
         Handle jogwheel input - maps rotation to stick circular motion.
-        Jogwheel value is accumulated, we track the delta to create rotation.
+        - 5x reduced sensitivity
+        - Only active when jog is touched (jog_push)
+        - Intensity ramps up as jog is turned
         """
         if stick == "left":
             # Calculate delta from last value
@@ -253,18 +297,22 @@ class XboxEmulator:
             elif delta < -128:
                 delta += 256
             
-            # Skip if no change
-            if delta == 0:
+            # Skip if no change or jog not touched
+            if delta == 0 or not self._jog_push_a:
                 return
             
-            # Convert delta to angle change (scale factor for sensitivity)
-            angle_delta = (delta / 32.0) * math.pi
+            # Convert delta to angle change (5x reduced sensitivity: /160.0 instead of /32.0)
+            angle_delta = (delta / 160.0) * math.pi
             self.jog_a_angle += angle_delta
             self.jog_a_angle %= (math.pi * 2)
             
-            # Convert angle to stick X/Y
-            x = math.cos(self.jog_a_angle)
-            y = math.sin(self.jog_a_angle)
+            # Ramp up intensity (increases with each movement, max 1.0)
+            self._stick_intensity_a = min(1.0, self._stick_intensity_a + abs(delta) / 100.0)
+            
+            # Convert angle to stick X/Y, scaled by intensity
+            intensity = self._stick_intensity_a
+            x = math.cos(self.jog_a_angle) * intensity
+            y = math.sin(self.jog_a_angle) * intensity
             self.gamepad.left_joystick_float(x_value_float=x, y_value_float=y)
         
         elif stick == "right":
@@ -276,15 +324,18 @@ class XboxEmulator:
             elif delta < -128:
                 delta += 256
             
-            if delta == 0:
+            if delta == 0 or not self._jog_push_b:
                 return
             
-            angle_delta = (delta / 32.0) * math.pi
+            angle_delta = (delta / 160.0) * math.pi
             self.jog_b_angle += angle_delta
             self.jog_b_angle %= (math.pi * 2)
             
-            x = math.cos(self.jog_b_angle)
-            y = math.sin(self.jog_b_angle)
+            self._stick_intensity_b = min(1.0, self._stick_intensity_b + abs(delta) / 100.0)
+            
+            intensity = self._stick_intensity_b
+            x = math.cos(self.jog_b_angle) * intensity
+            y = math.sin(self.jog_b_angle) * intensity
             self.gamepad.right_joystick_float(x_value_float=x, y_value_float=y)
     
     def _handle_dpad(self, pressed: bool, direction: str):
