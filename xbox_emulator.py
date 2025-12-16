@@ -7,6 +7,9 @@ from dataclasses import dataclass
 from typing import Optional, Dict, Any
 import math
 
+JOG_SENSITIVITY = 1 / 720.0  # Reduced sensitivity for jogwheel to stick mapping
+INTENSITY_SCALE = 10.0      # Scale for stick intensity ramp-up
+
 try:
     import vgamepad as vg
     VGAMEPAD_AVAILABLE = True
@@ -316,12 +319,12 @@ class XboxEmulator:
                 return
             
             # Convert delta to angle change (5x reduced sensitivity: /160.0 instead of /32.0)
-            angle_delta = (delta / 160.0) * math.pi
+            angle_delta = (delta * JOG_SENSITIVITY) * math.pi
             self.jog_a_angle += angle_delta
             self.jog_a_angle %= (math.pi * 2)
             
             # Ramp up intensity (increases with each movement, max 1.0)
-            self._stick_intensity_a = min(1.0, self._stick_intensity_a + abs(delta) / 100.0)
+            self._stick_intensity_a = min(1.0, self._stick_intensity_a + abs(delta) / INTENSITY_SCALE)
             
             # Convert angle to stick X/Y, scaled by intensity
             intensity = self._stick_intensity_a
@@ -341,11 +344,11 @@ class XboxEmulator:
             if delta == 0 or not self._jog_push_b:
                 return
             
-            angle_delta = (delta / 160.0) * math.pi
+            angle_delta = (delta * JOG_SENSITIVITY) * math.pi
             self.jog_b_angle += angle_delta
             self.jog_b_angle %= (math.pi * 2)
             
-            self._stick_intensity_b = min(1.0, self._stick_intensity_b + abs(delta) / 100.0)
+            self._stick_intensity_b = min(1.0, self._stick_intensity_b + abs(delta) / INTENSITY_SCALE)
             
             intensity = self._stick_intensity_b
             x = math.cos(self.jog_b_angle) * intensity

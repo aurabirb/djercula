@@ -317,6 +317,7 @@ class DJControlTUI:
         """Main application loop"""
         # Auto-connect on startup
         port_name = find_djcontrol_port()
+        xbox_rendered = False
         if port_name:
             self.app.status_message = f"Found {port_name}, connecting..."
             self.midi_task = asyncio.create_task(self.connect_midi())
@@ -333,14 +334,21 @@ class DJControlTUI:
             
             # Render UI
             try:
-                if self.app.needs_render:
+                if self.app.xbox_enabled and not xbox_rendered:
+                    self.renderer.render(self.app)
+                    xbox_rendered = True
+                if self.app.needs_render and not self.app.xbox_enabled:
                     self.renderer.render(self.app)
                     self.app.needs_render = False
+                    xbox_rendered = False
             except curses.error:
                 pass
             
             # Small delay to prevent CPU spinning
-            await asyncio.sleep(0.032)  # ~30 FPS
+            if self.app.xbox_enabled:
+                await asyncio.sleep(0.016)  # ~60 FPS
+            else:
+                await asyncio.sleep(0.1) # 10 FPS
         
         # Cleanup
         if self.app.xbox_enabled:
