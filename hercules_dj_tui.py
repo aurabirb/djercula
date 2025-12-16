@@ -16,6 +16,7 @@ from tui_renderer import TUIRenderer
 @dataclass
 class DJControlApp:
     """Main application state"""
+    needs_render: bool = True
     
     # Connection state
     connected: bool = False
@@ -107,6 +108,7 @@ class DJControlApp:
     
     def reset_controls(self):
         """Reset all controls to default values"""
+        self.needs_render = True
         # Deck A
         self.deck_a_volume = 64
         self.deck_a_eq_high = 64
@@ -143,6 +145,7 @@ class DJControlApp:
     
     def add_log(self, message: str):
         """Add a message to the MIDI log"""
+        self.needs_render = True
         self.midi_log.append(message)
         # Keep only last 100 messages
         if len(self.midi_log) > 100:
@@ -150,6 +153,7 @@ class DJControlApp:
     
     def handle_midi_message(self, msg):
         """Process incoming MIDI message and update state"""
+        self.needs_render = True
         log_entry = str(msg)
         
         if msg.type == 'control_change':
@@ -240,6 +244,7 @@ class DJControlTUI:
         self.app.status_message = f"Found {len(ports)} MIDI device(s)"
     
     def handle_input(self, key: int) -> bool:
+        self.needs_render = True
         """Handle keyboard input, returns False to quit"""
         if key == ord('q'):
             return False
@@ -304,12 +309,14 @@ class DJControlTUI:
             
             # Render UI
             try:
-                self.renderer.render(self.app)
+                if self.app.needs_render:
+                    self.renderer.render(self.app)
+                    self.app.needs_render = False
             except curses.error:
                 pass
             
             # Small delay to prevent CPU spinning
-            await asyncio.sleep(0.016)  # ~60 FPS
+            await asyncio.sleep(0.032)  # ~30 FPS
         
         # Cleanup
         if self.midi_task and not self.midi_task.done():
