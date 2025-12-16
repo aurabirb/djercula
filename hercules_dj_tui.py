@@ -11,6 +11,7 @@ from typing import Optional
 from midi import midi_input_generator, find_djcontrol_port, get_available_ports
 from inputmap import MIDI_CC_MAP, MIDI_NOTE_MAP
 from tui_renderer import TUIRenderer
+from xbox_emulator import XboxEmulator
 
 
 @dataclass
@@ -23,6 +24,9 @@ class DJControlApp:
     device_name: str = ""
     status_message: str = "Press 's' to scan for devices"
     battery_level: Optional[int] = None
+    
+    # Xbox emulator
+    xbox_enabled: bool = False
     
     # Device selection
     show_device_list: bool = False
@@ -211,6 +215,7 @@ class DJControlTUI:
         self.app = DJControlApp()
         self.running = True
         self.midi_task: Optional[asyncio.Task] = None
+        self.xbox_emulator = XboxEmulator()
     
     async def connect_midi(self):
         """Connect to MIDI device and start receiving messages"""
@@ -227,6 +232,9 @@ class DJControlTUI:
                     if not self.running:
                         break
                     self.app.handle_midi_message(msg)
+                    # Update Xbox emulator with current app state
+                    if self.app.xbox_enabled:
+                        self.xbox_emulator.update_from_app(self.app)
             except Exception as e:
                 self.app.connected = False
                 self.app.status_message = f"MIDI Error: {e}"
@@ -268,6 +276,22 @@ class DJControlTUI:
         elif key == ord('r'):
             self.app.reset_controls()
             self.app.add_log("Controls reset")
+        
+        elif key == ord('x'):
+            # Toggle Xbox emulator
+            if self.app.xbox_enabled:
+                self.xbox_emulator.stop()
+                self.app.xbox_enabled = False
+                self.app.add_log("Xbox emulator disabled")
+            else:
+                if self.xbox_emulator.available:
+                    if self.xbox_emulator.start():
+                        self.app.xbox_enabled = True
+                        self.app.add_log("Xbox emulator enabled")
+                    else:
+                        self.app.add_log("Failed to start Xbox emulator")
+                else:
+                    self.app.add_log("vgamepad not installed (pip install vgamepad)")
         
         elif key == 27:  # ESC
             self.app.show_device_list = False
@@ -319,6 +343,8 @@ class DJControlTUI:
             await asyncio.sleep(0.032)  # ~30 FPS
         
         # Cleanup
+        if self.app.xbox_enabled:
+            self.xbox_emulator.stop()
         if self.midi_task and not self.midi_task.done():
             self.midi_task.cancel()
             try:

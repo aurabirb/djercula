@@ -194,7 +194,7 @@ class TUIRenderer:
 
     
     def draw_header(self, connected: bool, device_name: str, status_message: str,
-                    battery_level: Optional[int] = None):
+                    battery_level: Optional[int] = None, xbox_enabled: bool = False):
         """Draw the header with connection status"""
         height, width = self.stdscr.getmaxyx()
         
@@ -209,6 +209,11 @@ class TUIRenderer:
                 self.stdscr.addstr(1, 2 + len(status) + 2, f"🔋 {battery_level}%", curses.color_pair(4))
         else:
             self.stdscr.addstr(1, 2, "○ Not Connected", curses.color_pair(2))
+        
+        # Xbox emulator status (right side)
+        if xbox_enabled:
+            xbox_str = "🎮 XBOX ON"
+            self.stdscr.addstr(1, width - len(xbox_str) - 2, xbox_str, curses.color_pair(1) | curses.A_BOLD)
         
         # Status message
         self.stdscr.addstr(2, 2, status_message[:width-4], curses.color_pair(5))
@@ -232,6 +237,7 @@ class TUIRenderer:
             " ↑/↓ - Select device",
             " Enter - Confirm",
             " r - Reset values",
+            " x - Xbox emulator",
             " q - Quit",
         ]
         
@@ -295,7 +301,8 @@ class TUIRenderer:
             app.connected,
             app.device_name,
             app.status_message,
-            app.battery_level
+            app.battery_level,
+            getattr(app, 'xbox_enabled', False)
         )
         
         if app.show_device_list:
