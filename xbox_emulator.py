@@ -51,6 +51,10 @@ class XboxEmulator:
         self._last_jog_a: int = 0
         self._last_jog_b: int = 0
         
+        # Base jogwheel position when first touched (for offset calculation)
+        self._base_jog_a: int = 0
+        self._base_jog_b: int = 0
+        
         # Jog push state (True when touching the jog wheel)
         self._jog_push_a: bool = False
         self._jog_push_b: bool = False
@@ -264,19 +268,29 @@ class XboxEmulator:
             was_pushed = self._jog_push_a
             self._jog_push_a = pressed
             if pressed and not was_pushed:
-                # Just touched - reset intensity to start from 0
+                # Just touched - remember current jog position as base, reset angle and intensity
+                # Start at pi/2 so stick points up initially
+                self._base_jog_a = self._last_jog_a
+                self.jog_a_angle = -math.pi / 2
                 self._stick_intensity_a = 0.0
             elif not pressed:
                 # Released - return stick to neutral
                 self._stick_intensity_a = 0.0
+                self.jog_a_angle = -math.pi / 2
                 self.gamepad.left_joystick_float(x_value_float=0.0, y_value_float=0.0)
         elif stick == "right":
             was_pushed = self._jog_push_b
             self._jog_push_b = pressed
             if pressed and not was_pushed:
+                # Just touched - remember current jog position as base, reset angle and intensity
+                # Start at pi/2 so stick points up initially
+                self._base_jog_b = self._last_jog_b
+                self.jog_b_angle = -math.pi / 2
                 self._stick_intensity_b = 0.0
             elif not pressed:
+                # Released - return stick to neutral
                 self._stick_intensity_b = 0.0
+                self.jog_b_angle = -math.pi / 2
                 self.gamepad.right_joystick_float(x_value_float=0.0, y_value_float=0.0)
     
     def _handle_jogwheel(self, value: int, stick: str):
