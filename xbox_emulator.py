@@ -5,10 +5,8 @@ Maps Hercules DJControl inputs to virtual Xbox controller.
 
 from dataclasses import dataclass
 from typing import Optional, Dict, Any
-import math
 
-JOG_SENSITIVITY = 1 / 720.0  # Reduced sensitivity for jogwheel to stick mapping
-INTENSITY_SCALE = 10.0      # Scale for stick intensity ramp-up
+JOG_SENSITIVITY = 1 / 720.0  # Sensitivity for jogwheel rotation speed to X-axis
 
 try:
     import vgamepad as vg
@@ -35,8 +33,9 @@ class XboxEmulator:
     Emulates Xbox controller using DJ controller inputs.
     
     Mappings:
-    - Jog wheels -> Left/Right stick rotation (circular motion)
-    - Pitch sliders -> Triggers (LT/RT)
+    - Pitch sliders -> Left/Right stick Y-axis (up/down, neutral at center)
+    - Jog wheels -> Left/Right stick X-axis (left/right based on rotation speed)
+    - Volume sliders -> Triggers (LT/RT)
     - Deck A pads 2,5,6,7 -> D-pad (Up, Left, Down, Right)
     - Deck B pads 1,2,5,6 -> Xbox buttons (A, B, X, Y)
     """
@@ -45,10 +44,6 @@ class XboxEmulator:
         self.gamepad: Optional[Any] = None
         self.enabled: bool = False
         self._last_values: Dict[str, Any] = {}
-        
-        # Jog wheel cumulative angle tracking (for stick rotation)
-        self.jog_a_angle: float = 0.0
-        self.jog_b_angle: float = 0.0
         
         # Last jogwheel values to detect changes
         self._last_jog_a: int = 0
@@ -62,9 +57,17 @@ class XboxEmulator:
         self._jog_push_a: bool = False
         self._jog_push_b: bool = False
         
-        # Stick intensity (ramps up as jog is turned, 0.0 to 1.0)
-        self._stick_intensity_a: float = 0.0
-        self._stick_intensity_b: float = 0.0
+        # Jog X-axis values (from jogwheel rotation speed)
+        self._jog_x_left: float = 0.0
+        self._jog_x_right: float = 0.0
+        
+        # Cumulative jog rotation (resets when jog is touched)
+        self._jog_cumulative_left: float = 0.0
+        self._jog_cumulative_right: float = 0.0
+        
+        # Pitch Y-axis values (from pitch sliders)
+        self._pitch_y_left: float = 0.0
+        self._pitch_y_right: float = 0.0
         
         # Track all pressed buttons to avoid reset() issues
         self._pressed_buttons: set = set()
@@ -77,16 +80,16 @@ class XboxEmulator:
         
         # Continuous control mappings (sliders, encoders)
         self.continuous_mappings = {
-            # Pitch sliders -> Triggers
+            # Pitch sliders -> Stick Y-axis (up/down)
             "deck_a_pitch": {
-                "handler": self._handle_trigger,
-                "args": {"trigger": "left"},
+                "handler": self._handle_pitch,
+                "args": {"stick": "left"},
             },
             "deck_b_pitch": {
-                "handler": self._handle_trigger,
-                "args": {"trigger": "right"},
+                "handler": self._handle_pitch,
+                "args": {"stick": "right"},
             },
-            # Jog wheels -> Stick rotation
+            # Jog wheels -> Stick X-axis (left/right based on rotation speed)
             "deck_a_jogwheel": {
                 "handler": self._handle_jogwheel,
                 "args": {"stick": "left"},
@@ -94,6 +97,15 @@ class XboxEmulator:
             "deck_b_jogwheel": {
                 "handler": self._handle_jogwheel,
                 "args": {"stick": "right"},
+            },
+            # Volume sliders -> Triggers
+            "deck_a_volume": {
+                "handler": self._handle_trigger,
+                "args": {"trigger": "left"},
+            },
+            "deck_b_volume": {
+                "handler": self._handle_trigger,
+                "args": {"trigger": "right"},
             },
             # Jog push -> controls stick active state
             "jog_push_a": {
@@ -204,14 +216,16 @@ class XboxEmulator:
         
         self.gamepad.reset()
         self.gamepad.update()
-        self.jog_a_angle = 0.0
-        self.jog_b_angle = 0.0
         self._last_jog_a = 0
         self._last_jog_b = 0
         self._jog_push_a = False
         self._jog_push_b = False
-        self._stick_intensity_a = 0.0
-        self._stick_intensity_b = 0.0
+        self._jog_x_left = 0.0
+        self._jog_x_right = 0.0
+        self._jog_cumulative_left = 0.0
+        self._jog_cumulative_right = 0.0
+        self._pitch_y_left = 0.0
+        self._pitch_y_right = 0.0
         self._pressed_buttons.clear()
         self.dpad_state = {k: False for k in self.dpad_state}
         self._last_values.clear()
@@ -254,10 +268,10 @@ class XboxEmulator:
             return getattr(app, attr_name, None)
     
     def _handle_trigger(self, value: int, trigger: str):
-        """Handle trigger input (0-127 -> 0-255)"""
+        """Handle trigger input from volume sliders (0-127 -> 0-255)"""
         # Convert MIDI value (0-127) to trigger value (0-255)
-        # Invert so that 127 (top position) = 0, 0 (bottom) = 255
-        trigger_value = int((127 - value) * 2)
+        # Volume at 0 = no trigger, volume at 127 = full trigger
+        trigger_value = int(value * 2)
         trigger_value = max(0, min(255, trigger_value))
         
         if trigger == "left":
@@ -265,43 +279,61 @@ class XboxEmulator:
         elif trigger == "right":
             self.gamepad.right_trigger(value=trigger_value)
     
+    def _handle_pitch(self, value: int, stick: str):
+        """Handle pitch slider input - controls stick Y-axis with neutral at center"""
+        # Convert MIDI value (0-127) to Y value (-1.0 to 1.0)
+        # 64 (center) = 0.0, 0 (bottom) = -1.0, 127 (top) = 1.0
+        y_value = (value - 64) / 64.0
+        y_value = max(-1.0, min(1.0, y_value))
+        
+        if stick == "left":
+            self._pitch_y_left = y_value
+            # Combine with jog X value
+            x_value = getattr(self, '_jog_x_left', 0.0)
+            self.gamepad.left_joystick_float(x_value_float=x_value, y_value_float=y_value)
+        elif stick == "right":
+            self._pitch_y_right = y_value
+            # Combine with jog X value
+            x_value = getattr(self, '_jog_x_right', 0.0)
+            self.gamepad.right_joystick_float(x_value_float=x_value, y_value_float=y_value)
+    
     def _handle_jog_push(self, pressed: bool, stick: str):
-        """Handle jog wheel touch state - sticks return to neutral when released"""
+        """Handle jog wheel touch state - X-axis returns to neutral when released"""
         if stick == "left":
             was_pushed = self._jog_push_a
             self._jog_push_a = pressed
             if pressed and not was_pushed:
-                # Just touched - remember current jog position as base, reset angle and intensity
-                # Start at pi/2 so stick points up initially
+                # Just touched - reset cumulative rotation
                 self._base_jog_a = self._last_jog_a
-                self.jog_a_angle = -math.pi / 2
-                self._stick_intensity_a = 0.0
+                self._jog_x_left = 0.0
+                self._jog_cumulative_left = 0.0
             elif not pressed:
-                # Released - return stick to neutral
-                self._stick_intensity_a = 0.0
-                self.jog_a_angle = -math.pi / 2
-                self.gamepad.left_joystick_float(x_value_float=0.0, y_value_float=0.0)
+                # Released - return X to neutral, keep Y from pitch
+                self._jog_x_left = 0.0
+                self._jog_cumulative_left = 0.0
+                y_value = getattr(self, '_pitch_y_left', 0.0)
+                self.gamepad.left_joystick_float(x_value_float=0.0, y_value_float=y_value)
         elif stick == "right":
             was_pushed = self._jog_push_b
             self._jog_push_b = pressed
             if pressed and not was_pushed:
-                # Just touched - remember current jog position as base, reset angle and intensity
-                # Start at pi/2 so stick points up initially
+                # Just touched - reset cumulative rotation
                 self._base_jog_b = self._last_jog_b
-                self.jog_b_angle = -math.pi / 2
-                self._stick_intensity_b = 0.0
+                self._jog_x_right = 0.0
+                self._jog_cumulative_right = 0.0
             elif not pressed:
-                # Released - return stick to neutral
-                self._stick_intensity_b = 0.0
-                self.jog_b_angle = -math.pi / 2
-                self.gamepad.right_joystick_float(x_value_float=0.0, y_value_float=0.0)
+                # Released - return X to neutral, keep Y from pitch
+                self._jog_x_right = 0.0
+                self._jog_cumulative_right = 0.0
+                y_value = getattr(self, '_pitch_y_right', 0.0)
+                self.gamepad.right_joystick_float(x_value_float=0.0, y_value_float=y_value)
     
     def _handle_jogwheel(self, value: int, stick: str):
         """
-        Handle jogwheel input - maps rotation to stick circular motion.
-        - 5x reduced sensitivity
+        Handle jogwheel input - maps cumulative rotation to stick X-axis (left/right).
+        - Cumulative rotation determines X deflection
+        - Clockwise = right, counter-clockwise = left
         - Only active when jog is touched (jog_push)
-        - Intensity ramps up as jog is turned
         """
         if stick == "left":
             # Calculate delta from last value
@@ -314,23 +346,18 @@ class XboxEmulator:
             elif delta < -128:
                 delta += 256
             
-            # Skip if no change or jog not touched
-            if delta == 0 or not self._jog_push_a:
+            # Skip if jog not touched
+            if not self._jog_push_a:
                 return
             
-            # Convert delta to angle change (5x reduced sensitivity: /160.0 instead of /32.0)
-            angle_delta = (delta * JOG_SENSITIVITY) * math.pi
-            self.jog_a_angle += angle_delta
-            self.jog_a_angle %= (math.pi * 2)
+            # Accumulate rotation and convert to X value (-1.0 to 1.0)
+            # Full rotation (256 ticks) = full stick deflection
+            self._jog_cumulative_left += delta * JOG_SENSITIVITY
+            x_value = max(-1.0, min(1.0, self._jog_cumulative_left))
             
-            # Ramp up intensity (increases with each movement, max 1.0)
-            self._stick_intensity_a = min(1.0, self._stick_intensity_a + abs(delta) / INTENSITY_SCALE)
-            
-            # Convert angle to stick X/Y, scaled by intensity
-            intensity = self._stick_intensity_a
-            x = math.cos(self.jog_a_angle) * intensity
-            y = math.sin(self.jog_a_angle) * intensity
-            self.gamepad.left_joystick_float(x_value_float=x, y_value_float=y)
+            self._jog_x_left = x_value
+            y_value = getattr(self, '_pitch_y_left', 0.0)
+            self.gamepad.left_joystick_float(x_value_float=x_value, y_value_float=y_value)
         
         elif stick == "right":
             delta = value - self._last_jog_b
@@ -341,19 +368,16 @@ class XboxEmulator:
             elif delta < -128:
                 delta += 256
             
-            if delta == 0 or not self._jog_push_b:
+            if not self._jog_push_b:
                 return
             
-            angle_delta = (delta * JOG_SENSITIVITY) * math.pi
-            self.jog_b_angle += angle_delta
-            self.jog_b_angle %= (math.pi * 2)
+            # Accumulate rotation and convert to X value (-1.0 to 1.0)
+            self._jog_cumulative_right += delta * JOG_SENSITIVITY
+            x_value = max(-1.0, min(1.0, self._jog_cumulative_right))
             
-            self._stick_intensity_b = min(1.0, self._stick_intensity_b + abs(delta) / INTENSITY_SCALE)
-            
-            intensity = self._stick_intensity_b
-            x = math.cos(self.jog_b_angle) * intensity
-            y = math.sin(self.jog_b_angle) * intensity
-            self.gamepad.right_joystick_float(x_value_float=x, y_value_float=y)
+            self._jog_x_right = x_value
+            y_value = getattr(self, '_pitch_y_right', 0.0)
+            self.gamepad.right_joystick_float(x_value_float=x_value, y_value_float=y_value)
     
     def _handle_dpad(self, pressed: bool, direction: str):
         """Handle D-pad button press"""
