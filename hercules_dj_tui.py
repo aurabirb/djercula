@@ -12,6 +12,7 @@ from midi import midi_input_generator, find_djcontrol_port, get_available_ports
 from inputmap import MIDI_CC_MAP, MIDI_NOTE_MAP
 from tui_renderer import TUIRenderer
 from xbox_emulator import XboxEmulator
+from wheel_emulator import WheelEmulator
 
 
 @dataclass
@@ -27,6 +28,10 @@ class DJControlApp:
     
     # Xbox emulator
     xbox_enabled: bool = False
+    
+    # Wheel emulator
+    wheel_enabled: bool = False
+    wheel_status: str = ""
     
     # Device selection
     show_device_list: bool = False
@@ -216,6 +221,7 @@ class DJControlTUI:
         self.running = True
         self.midi_task: Optional[asyncio.Task] = None
         self.xbox_emulator = XboxEmulator()
+        self.wheel_emulator = WheelEmulator()
     
     async def connect_midi(self):
         """Connect to MIDI device and start receiving messages"""
@@ -235,6 +241,10 @@ class DJControlTUI:
                     # Update Xbox emulator with current app state
                     if self.app.xbox_enabled:
                         self.xbox_emulator.update_from_app(self.app)
+                    # Update wheel emulator with current app state
+                    if self.app.wheel_enabled:
+                        self.wheel_emulator.update_from_app(self.app)
+                        self.app.wheel_status = self.wheel_emulator.get_status_text()
             except Exception as e:
                 self.app.connected = False
                 self.app.status_message = f"MIDI Error: {e}"
@@ -293,6 +303,24 @@ class DJControlTUI:
                 else:
                     self.app.add_log("vgamepad not installed (pip install vgamepad)")
         
+        elif key == ord('w'):
+            # Toggle Wheel emulator
+            if self.app.wheel_enabled:
+                self.wheel_emulator.stop()
+                self.app.wheel_enabled = False
+                self.app.wheel_status = ""
+                self.app.add_log("Wheel emulator disabled")
+            else:
+                if self.wheel_emulator.available:
+                    if self.wheel_emulator.start():
+                        self.app.wheel_enabled = True
+                        self.app.wheel_status = self.wheel_emulator.get_status_text()
+                        self.app.add_log("Wheel emulator enabled")
+                    else:
+                        self.app.add_log("Failed to start wheel emulator (need root or uinput perms)")
+                else:
+                    self.app.add_log("evdev not installed (pip install evdev)")
+        
         elif key == 27:  # ESC
             self.app.show_device_list = False
         
@@ -348,11 +376,13 @@ class DJControlTUI:
             if self.app.xbox_enabled:
                 await asyncio.sleep(0.016)  # ~60 FPS
             else:
-                await asyncio.sleep(0.1) # 10 FPS
+                await asyncio.sleep(0.032) # 30 FPS
         
         # Cleanup
         if self.app.xbox_enabled:
             self.xbox_emulator.stop()
+        if self.app.wheel_enabled:
+            self.wheel_emulator.stop()
         if self.midi_task and not self.midi_task.done():
             self.midi_task.cancel()
             try:

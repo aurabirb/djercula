@@ -340,11 +340,11 @@ class XboxEmulator:
             delta = value - self._last_jog_a
             self._last_jog_a = value
             
-            # Handle wraparound (0-255)
-            if delta > 128:
-                delta -= 256
-            elif delta < -128:
-                delta += 256
+            # # Handle wraparound (0-255)
+            # if delta > 128:
+            #     delta -= 256
+            # elif delta < -128:
+            #     delta += 256
             
             # Skip if jog not touched
             if not self._jog_push_a:

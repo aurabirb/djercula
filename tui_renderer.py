@@ -194,7 +194,8 @@ class TUIRenderer:
 
     
     def draw_header(self, connected: bool, device_name: str, status_message: str,
-                    battery_level: Optional[int] = None, xbox_enabled: bool = False):
+                    battery_level: Optional[int] = None, xbox_enabled: bool = False,
+                    wheel_enabled: bool = False, wheel_status: str = ""):
         """Draw the header with connection status"""
         height, width = self.stdscr.getmaxyx()
         
@@ -214,6 +215,14 @@ class TUIRenderer:
         if xbox_enabled:
             xbox_str = "🎮 XBOX ON"
             self.stdscr.addstr(1, width - len(xbox_str) - 2, xbox_str, curses.color_pair(1) | curses.A_BOLD)
+        
+        # Wheel emulator status (below header or right side)
+        if wheel_enabled:
+            wheel_str = "🏎️  WHEEL ON"
+            self.stdscr.addstr(1, width - len(wheel_str) - 15 if xbox_enabled else width - len(wheel_str) - 2, 
+                              wheel_str, curses.color_pair(1) | curses.A_BOLD)
+            if wheel_status:
+                self.stdscr.addstr(2, width - len(wheel_status) - 2, wheel_status, curses.color_pair(4))
         
         # Status message
         self.stdscr.addstr(2, 2, status_message[:width-4], curses.color_pair(5))
@@ -238,6 +247,7 @@ class TUIRenderer:
             " Enter - Confirm",
             " r - Reset values",
             " x - Xbox emulator",
+            " w - Wheel emulator",
             " q - Quit",
         ]
         
@@ -302,7 +312,9 @@ class TUIRenderer:
             app.device_name,
             app.status_message,
             app.battery_level,
-            getattr(app, 'xbox_enabled', False)
+            getattr(app, 'xbox_enabled', False),
+            getattr(app, 'wheel_enabled', False),
+            getattr(app, 'wheel_status', '')
         )
         
         if app.show_device_list:
