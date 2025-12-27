@@ -1,0 +1,3877 @@
+[
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.057056000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.057056000 UTC",
+          "frame.time_epoch": "1766857122.057056000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.028825000",
+          "frame.time_delta_displayed": "0.028825000",
+          "frame.time_relative": "25.256047000",
+          "frame.number": "469",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50475",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "28",
+          "nordic_ble.rssi": "-46",
+          "nordic_ble.event_counter": "1629",
+          "nordic_ble.time": "378883414",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "28648",
+          "nordic_ble.delta_time_ss": "28824"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.sequence_number_tree": {
+              "_ws.expert": {
+                "btle.retransmit": "",
+                "_ws.expert.message": "Retransmission",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "421",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xca3dda"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "94:86:92:05:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.072057000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.072057000 UTC",
+          "frame.time_epoch": "1766857122.072057000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.015001000",
+          "frame.time_delta_displayed": "0.015001000",
+          "frame.time_relative": "25.271048000",
+          "frame.number": "470",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50477",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "27",
+          "nordic_ble.rssi": "-46",
+          "nordic_ble.event_counter": "1630",
+          "nordic_ble.time": "378898415",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "14825",
+          "nordic_ble.delta_time_ss": "15001"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "422",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xbf8ccf"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "94:87:95:05:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.102058000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.102058000 UTC",
+          "frame.time_epoch": "1766857122.102058000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.030001000",
+          "frame.time_delta_displayed": "0.030001000",
+          "frame.time_relative": "25.301049000",
+          "frame.number": "471",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50481",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "17",
+          "nordic_ble.rssi": "-43",
+          "nordic_ble.event_counter": "1632",
+          "nordic_ble.time": "378928416",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "29825",
+          "nordic_ble.delta_time_ss": "30001"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.sequence_number_tree": {
+              "_ws.expert": {
+                "btle.retransmit": "",
+                "_ws.expert.message": "Retransmission",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "423",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x39371a"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "94:b0:91:05:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.102615000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.102615000 UTC",
+          "frame.time_epoch": "1766857122.102615000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000557000",
+          "frame.time_delta_displayed": "0.000557000",
+          "frame.time_relative": "25.301606000",
+          "frame.number": "472",
+          "frame.len": "46",
+          "frame.cap_len": "46",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "39",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50483",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "17",
+          "nordic_ble.rssi": "-42",
+          "nordic_ble.event_counter": "1632",
+          "nordic_ble.time": "378928973",
+          "nordic_ble.packet_time": "240",
+          "nordic_ble.delta_time": "381",
+          "nordic_ble.delta_time_ss": "557"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "20"
+          },
+          "btle.length": "20",
+          "btle.l2cap_index": "424",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x1afafb"
+        },
+        "btl2cap": {
+          "btl2cap.length": "16",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "94:b0:94:05:7f:b1:92:05:7f:b1:95:05:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.222064000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.222064000 UTC",
+          "frame.time_epoch": "1766857122.222064000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.119449000",
+          "frame.time_delta_displayed": "0.119449000",
+          "frame.time_relative": "25.421055000",
+          "frame.number": "473",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50498",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "24",
+          "nordic_ble.rssi": "-49",
+          "nordic_ble.event_counter": "1640",
+          "nordic_ble.time": "379048421",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "119208",
+          "nordic_ble.delta_time_ss": "119448"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.sequence_number_tree": {
+              "_ws.expert": {
+                "btle.retransmit": "",
+                "_ws.expert.message": "Retransmission",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "425",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x553d64"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "95:ab:92:05:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.222620000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.222620000 UTC",
+          "frame.time_epoch": "1766857122.222620000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000556000",
+          "frame.time_delta_displayed": "0.000556000",
+          "frame.time_relative": "25.421611000",
+          "frame.number": "474",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50500",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "24",
+          "nordic_ble.rssi": "-49",
+          "nordic_ble.event_counter": "1640",
+          "nordic_ble.time": "379048977",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "380",
+          "nordic_ble.delta_time_ss": "556"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "426",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xb0231e"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "95:ab:95:05:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.267066000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.267066000 UTC",
+          "frame.time_epoch": "1766857122.267066000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.044446000",
+          "frame.time_delta_displayed": "0.044446000",
+          "frame.time_relative": "25.466057000",
+          "frame.number": "475",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50506",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "7",
+          "nordic_ble.rssi": "-47",
+          "nordic_ble.event_counter": "1643",
+          "nordic_ble.time": "379093423",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "44270",
+          "nordic_ble.delta_time_ss": "44446"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "427",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xf3d69c"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "95:d5:92:06:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.267623000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.267623000 UTC",
+          "frame.time_epoch": "1766857122.267623000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000557000",
+          "frame.time_delta_displayed": "0.000557000",
+          "frame.time_relative": "25.466614000",
+          "frame.number": "476",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50508",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "7",
+          "nordic_ble.rssi": "-47",
+          "nordic_ble.event_counter": "1643",
+          "nordic_ble.time": "379093980",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "381",
+          "nordic_ble.delta_time_ss": "557"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "428",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x7005e4"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "95:d7:91:06:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.282067000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.282067000 UTC",
+          "frame.time_epoch": "1766857122.282067000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.014444000",
+          "frame.time_delta_displayed": "0.014444000",
+          "frame.time_relative": "25.481058000",
+          "frame.number": "477",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50510",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "22",
+          "nordic_ble.rssi": "-49",
+          "nordic_ble.event_counter": "1644",
+          "nordic_ble.time": "379108424",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "14268",
+          "nordic_ble.delta_time_ss": "14444"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "429",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x7b9c6e"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "95:e2:91:05:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.282623000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.282623000 UTC",
+          "frame.time_epoch": "1766857122.282623000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000556000",
+          "frame.time_delta_displayed": "0.000556000",
+          "frame.time_relative": "25.481614000",
+          "frame.number": "478",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50512",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "22",
+          "nordic_ble.rssi": "-48",
+          "nordic_ble.event_counter": "1644",
+          "nordic_ble.time": "379108980",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "380",
+          "nordic_ble.delta_time_ss": "556"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "430",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x5b84fe"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "95:e2:94:05:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.417073000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.417073000 UTC",
+          "frame.time_epoch": "1766857122.417073000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.134450000",
+          "frame.time_delta_displayed": "0.134450000",
+          "frame.time_relative": "25.616064000",
+          "frame.number": "479",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50528",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "16",
+          "nordic_ble.rssi": "-43",
+          "nordic_ble.event_counter": "1653",
+          "nordic_ble.time": "379243429",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "134273",
+          "nordic_ble.delta_time_ss": "134449"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "431",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xa14d51"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "96:e8:92:05:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.417630000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.417630000 UTC",
+          "frame.time_epoch": "1766857122.417630000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000557000",
+          "frame.time_delta_displayed": "0.000557000",
+          "frame.time_relative": "25.616621000",
+          "frame.number": "480",
+          "frame.len": "46",
+          "frame.cap_len": "46",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "39",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50530",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "16",
+          "nordic_ble.rssi": "-43",
+          "nordic_ble.event_counter": "1653",
+          "nordic_ble.time": "379243986",
+          "nordic_ble.packet_time": "240",
+          "nordic_ble.delta_time": "381",
+          "nordic_ble.delta_time_ss": "557"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "20"
+          },
+          "btle.length": "20",
+          "btle.l2cap_index": "432",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xce2adb"
+        },
+        "btl2cap": {
+          "btl2cap.length": "16",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "96:e8:95:05:7f:e9:91:05:7f:e9:94:05:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.432074000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.432074000 UTC",
+          "frame.time_epoch": "1766857122.432074000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.014444000",
+          "frame.time_delta_displayed": "0.014444000",
+          "frame.time_relative": "25.631065000",
+          "frame.number": "481",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50532",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "31",
+          "nordic_ble.rssi": "-47",
+          "nordic_ble.event_counter": "1654",
+          "nordic_ble.time": "379258430",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "14204",
+          "nordic_ble.delta_time_ss": "14444"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "433",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xc20e01"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "96:ff:91:05:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.432630000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.432630000 UTC",
+          "frame.time_epoch": "1766857122.432630000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000556000",
+          "frame.time_delta_displayed": "0.000556000",
+          "frame.time_relative": "25.631621000",
+          "frame.number": "482",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50534",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "31",
+          "nordic_ble.rssi": "-46",
+          "nordic_ble.event_counter": "1654",
+          "nordic_ble.time": "379258986",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "380",
+          "nordic_ble.delta_time_ss": "556"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "434",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xe21691"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "96:ff:94:05:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.522079000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.522079000 UTC",
+          "frame.time_epoch": "1766857122.522079000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.089449000",
+          "frame.time_delta_displayed": "0.089449000",
+          "frame.time_relative": "25.721070000",
+          "frame.number": "483",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50546",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "13",
+          "nordic_ble.rssi": "-45",
+          "nordic_ble.event_counter": "1660",
+          "nordic_ble.time": "379348434",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "89272",
+          "nordic_ble.delta_time_ss": "89448"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.sequence_number_tree": {
+              "_ws.expert": {
+                "btle.retransmit": "",
+                "_ws.expert.message": "Retransmission",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "435",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xef2989"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "97:d5:92:06:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.522635000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.522635000 UTC",
+          "frame.time_epoch": "1766857122.522635000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000556000",
+          "frame.time_delta_displayed": "0.000556000",
+          "frame.time_relative": "25.721626000",
+          "frame.number": "484",
+          "frame.len": "50",
+          "frame.cap_len": "50",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "43",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50548",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "13",
+          "nordic_ble.rssi": "-43",
+          "nordic_ble.event_counter": "1660",
+          "nordic_ble.time": "379348990",
+          "nordic_ble.packet_time": "272",
+          "nordic_ble.delta_time": "380",
+          "nordic_ble.delta_time_ss": "556"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "24"
+          },
+          "btle.length": "24",
+          "btle.l2cap_index": "436",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xe47957"
+        },
+        "btl2cap": {
+          "btl2cap.length": "20",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "97:d6:91:06:00:d6:92:07:00:d6:95:07:00:d7:91:07:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.582081000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.582081000 UTC",
+          "frame.time_epoch": "1766857122.582081000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.059446000",
+          "frame.time_delta_displayed": "0.059446000",
+          "frame.time_relative": "25.781072000",
+          "frame.number": "485",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50556",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "1",
+          "nordic_ble.rssi": "-46",
+          "nordic_ble.event_counter": "1664",
+          "nordic_ble.time": "379408436",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "59174",
+          "nordic_ble.delta_time_ss": "59446"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.sequence_number_tree": {
+              "_ws.expert": {
+                "btle.retransmit": "",
+                "_ws.expert.message": "Retransmission",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "437",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x4c9026"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "98:93:92:05:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.582637000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.582637000 UTC",
+          "frame.time_epoch": "1766857122.582637000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000556000",
+          "frame.time_delta_displayed": "0.000556000",
+          "frame.time_relative": "25.781628000",
+          "frame.number": "486",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50558",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "1",
+          "nordic_ble.rssi": "-45",
+          "nordic_ble.event_counter": "1664",
+          "nordic_ble.time": "379408992",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "380",
+          "nordic_ble.delta_time_ss": "556"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "438",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x2778d3"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "98:94:95:05:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.612082000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.612082000 UTC",
+          "frame.time_epoch": "1766857122.612082000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.029445000",
+          "frame.time_delta_displayed": "0.029445000",
+          "frame.time_relative": "25.811073000",
+          "frame.number": "487",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50562",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "9",
+          "nordic_ble.rssi": "-47",
+          "nordic_ble.event_counter": "1666",
+          "nordic_ble.time": "379438437",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "29269",
+          "nordic_ble.delta_time_ss": "29445"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.sequence_number_tree": {
+              "_ws.expert": {
+                "btle.retransmit": "",
+                "_ws.expert.message": "Retransmission",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "439",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x050759"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "98:b1:91:05:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:42.612639000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:42.612639000 UTC",
+          "frame.time_epoch": "1766857122.612639000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000557000",
+          "frame.time_delta_displayed": "0.000557000",
+          "frame.time_relative": "25.811630000",
+          "frame.number": "488",
+          "frame.len": "46",
+          "frame.cap_len": "46",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "39",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50564",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "9",
+          "nordic_ble.rssi": "-47",
+          "nordic_ble.event_counter": "1666",
+          "nordic_ble.time": "379438994",
+          "nordic_ble.packet_time": "240",
+          "nordic_ble.delta_time": "381",
+          "nordic_ble.delta_time_ss": "557"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "20"
+          },
+          "btle.length": "20",
+          "btle.l2cap_index": "440",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xc313b7"
+        },
+        "btl2cap": {
+          "btl2cap.length": "16",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "98:b1:94:05:7f:b2:92:05:7f:b2:95:05:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:43.017101000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:43.017101000 UTC",
+          "frame.time_epoch": "1766857123.017101000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.404462000",
+          "frame.time_delta_displayed": "0.404462000",
+          "frame.time_relative": "26.216092000",
+          "frame.number": "489",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50615",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "28",
+          "nordic_ble.rssi": "-58",
+          "nordic_ble.event_counter": "1693",
+          "nordic_ble.time": "379843454",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "404220",
+          "nordic_ble.delta_time_ss": "404460"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.sequence_number_tree": {
+              "_ws.expert": {
+                "btle.retransmit": "",
+                "_ws.expert.message": "Retransmission",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "441",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xe00614"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "9b:c8:92:06:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:43.017658000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:43.017658000 UTC",
+          "frame.time_epoch": "1766857123.017658000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000557000",
+          "frame.time_delta_displayed": "0.000557000",
+          "frame.time_relative": "26.216649000",
+          "frame.number": "490",
+          "frame.len": "50",
+          "frame.cap_len": "50",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "43",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50617",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "28",
+          "nordic_ble.rssi": "-58",
+          "nordic_ble.event_counter": "1693",
+          "nordic_ble.time": "379844011",
+          "nordic_ble.packet_time": "272",
+          "nordic_ble.delta_time": "381",
+          "nordic_ble.delta_time_ss": "557"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "24"
+          },
+          "btle.length": "24",
+          "btle.l2cap_index": "442",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x21e045"
+        },
+        "btl2cap": {
+          "btl2cap.length": "20",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "9b:c9:91:06:00:c9:92:07:7f:c9:95:07:7f:ca:91:07:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:43.527125000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:43.527125000 UTC",
+          "frame.time_epoch": "1766857123.527125000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.509467000",
+          "frame.time_delta_displayed": "0.509467000",
+          "frame.time_relative": "26.726116000",
+          "frame.number": "491",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50683",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "5",
+          "nordic_ble.rssi": "-40",
+          "nordic_ble.event_counter": "1727",
+          "nordic_ble.time": "380353475",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "509192",
+          "nordic_ble.delta_time_ss": "509464"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "443",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x95646c"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "9f:bd:92:06:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:43.527682000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:43.527682000 UTC",
+          "frame.time_epoch": "1766857123.527682000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000557000",
+          "frame.time_delta_displayed": "0.000557000",
+          "frame.time_relative": "26.726673000",
+          "frame.number": "492",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50685",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "5",
+          "nordic_ble.rssi": "-40",
+          "nordic_ble.event_counter": "1727",
+          "nordic_ble.time": "380354032",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "381",
+          "nordic_ble.delta_time_ss": "557"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "444",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x8acae2"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "9f:bd:91:06:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:43.528239000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:43.528239000 UTC",
+          "frame.time_epoch": "1766857123.528239000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000557000",
+          "frame.time_delta_displayed": "0.000557000",
+          "frame.time_relative": "26.727230000",
+          "frame.number": "493",
+          "frame.len": "46",
+          "frame.cap_len": "46",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "39",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50687",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "5",
+          "nordic_ble.rssi": "-40",
+          "nordic_ble.event_counter": "1727",
+          "nordic_ble.time": "380354589",
+          "nordic_ble.packet_time": "240",
+          "nordic_ble.delta_time": "381",
+          "nordic_ble.delta_time_ss": "557"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "20"
+          },
+          "btle.length": "20",
+          "btle.l2cap_index": "445",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x8c20e1"
+        },
+        "btl2cap": {
+          "btl2cap.length": "16",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "9f:be:92:07:00:be:95:07:00:be:91:07:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:43.767136000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:43.767136000 UTC",
+          "frame.time_epoch": "1766857123.767136000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.238897000",
+          "frame.time_delta_displayed": "0.238897000",
+          "frame.time_relative": "26.966127000",
+          "frame.number": "494",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50719",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "10",
+          "nordic_ble.rssi": "-42",
+          "nordic_ble.event_counter": "1743",
+          "nordic_ble.time": "380593485",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "238656",
+          "nordic_ble.delta_time_ss": "238896"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.sequence_number_tree": {
+              "_ws.expert": {
+                "btle.retransmit": "",
+                "_ws.expert.message": "Retransmission",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "446",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xe38bb2"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "a1:b1:92:06:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:43.767694000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:43.767694000 UTC",
+          "frame.time_epoch": "1766857123.767694000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000558000",
+          "frame.time_delta_displayed": "0.000558000",
+          "frame.time_relative": "26.966685000",
+          "frame.number": "495",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50721",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "10",
+          "nordic_ble.rssi": "-42",
+          "nordic_ble.event_counter": "1743",
+          "nordic_ble.time": "380594043",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "382",
+          "nordic_ble.delta_time_ss": "558"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "447",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x6058ca"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "a1:b3:91:06:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:44.022149000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:44.022149000 UTC",
+          "frame.time_epoch": "1766857124.022149000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.254455000",
+          "frame.time_delta_displayed": "0.254455000",
+          "frame.time_relative": "27.221140000",
+          "frame.number": "496",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50754",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "7",
+          "nordic_ble.rssi": "-36",
+          "nordic_ble.event_counter": "1760",
+          "nordic_ble.time": "380848496",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "254277",
+          "nordic_ble.delta_time_ss": "254453"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.sequence_number_tree": {
+              "_ws.expert": {
+                "btle.retransmit": "",
+                "_ws.expert.message": "Retransmission",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "448",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xff74a7"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "a3:b1:92:06:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:44.022705000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:44.022705000 UTC",
+          "frame.time_epoch": "1766857124.022705000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000556000",
+          "frame.time_delta_displayed": "0.000556000",
+          "frame.time_relative": "27.221696000",
+          "frame.number": "497",
+          "frame.len": "50",
+          "frame.cap_len": "50",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "43",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50756",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "7",
+          "nordic_ble.rssi": "-36",
+          "nordic_ble.event_counter": "1760",
+          "nordic_ble.time": "380849052",
+          "nordic_ble.packet_time": "272",
+          "nordic_ble.delta_time": "380",
+          "nordic_ble.delta_time_ss": "556"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "24"
+          },
+          "btle.length": "24",
+          "btle.l2cap_index": "449",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x25d516"
+        },
+        "btl2cap": {
+          "btl2cap.length": "20",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "a3:b1:91:06:00:b2:92:07:7f:b2:95:07:7f:b2:91:07:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:44.277160000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:44.277160000 UTC",
+          "frame.time_epoch": "1766857124.277160000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.254455000",
+          "frame.time_delta_displayed": "0.254455000",
+          "frame.time_relative": "27.476151000",
+          "frame.number": "498",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50790",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "22",
+          "nordic_ble.rssi": "-37",
+          "nordic_ble.event_counter": "1777",
+          "nordic_ble.time": "381103506",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "254182",
+          "nordic_ble.delta_time_ss": "254454"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "450",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x7d1ba2"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "a5:a8:92:06:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:44.277717000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:44.277717000 UTC",
+          "frame.time_epoch": "1766857124.277717000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000557000",
+          "frame.time_delta_displayed": "0.000557000",
+          "frame.time_relative": "27.476708000",
+          "frame.number": "499",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50792",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "22",
+          "nordic_ble.rssi": "-37",
+          "nordic_ble.event_counter": "1777",
+          "nordic_ble.time": "381104063",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "381",
+          "nordic_ble.delta_time_ss": "557"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "451",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xfec8da"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "a5:aa:91:06:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:44.532172000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:44.532172000 UTC",
+          "frame.time_epoch": "1766857124.532172000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.254455000",
+          "frame.time_delta_displayed": "0.254455000",
+          "frame.time_relative": "27.731163000",
+          "frame.number": "500",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50826",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "27",
+          "nordic_ble.rssi": "-42",
+          "nordic_ble.event_counter": "1794",
+          "nordic_ble.time": "381358517",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "254278",
+          "nordic_ble.delta_time_ss": "254454"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "452",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x31475c"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "a7:a8:92:06:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:44.532728000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:44.532728000 UTC",
+          "frame.time_epoch": "1766857124.532728000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000556000",
+          "frame.time_delta_displayed": "0.000556000",
+          "frame.time_relative": "27.731719000",
+          "frame.number": "501",
+          "frame.len": "50",
+          "frame.cap_len": "50",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "43",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50828",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "27",
+          "nordic_ble.rssi": "-42",
+          "nordic_ble.event_counter": "1794",
+          "nordic_ble.time": "381359073",
+          "nordic_ble.packet_time": "272",
+          "nordic_ble.delta_time": "380",
+          "nordic_ble.delta_time_ss": "556"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "24"
+          },
+          "btle.length": "24",
+          "btle.l2cap_index": "453",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xfe2422"
+        },
+        "btl2cap": {
+          "btl2cap.length": "20",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "a7:aa:91:06:00:ab:92:07:00:ac:95:07:00:ad:91:07:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:44.772183000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:44.772183000 UTC",
+          "frame.time_epoch": "1766857124.772183000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.239455000",
+          "frame.time_delta_displayed": "0.239455000",
+          "frame.time_relative": "27.971174000",
+          "frame.number": "502",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50860",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "2",
+          "nordic_ble.rssi": "-38",
+          "nordic_ble.event_counter": "1810",
+          "nordic_ble.time": "381598527",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "239182",
+          "nordic_ble.delta_time_ss": "239454"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.sequence_number_tree": {
+              "_ws.expert": {
+                "btle.retransmit": "",
+                "_ws.expert.message": "Retransmission",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "454",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0x6bffce"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "a9:9c:92:06:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:44.772739000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:44.772739000 UTC",
+          "frame.time_epoch": "1766857124.772739000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000556000",
+          "frame.time_delta_displayed": "0.000556000",
+          "frame.time_relative": "27.971730000",
+          "frame.number": "503",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50862",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "2",
+          "nordic_ble.rssi": "-37",
+          "nordic_ble.event_counter": "1810",
+          "nordic_ble.time": "381599083",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "380",
+          "nordic_ble.delta_time_ss": "556"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "455",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xe82cb6"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "a9:9e:91:06:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:45.027194000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:45.027194000 UTC",
+          "frame.time_epoch": "1766857125.027194000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.254455000",
+          "frame.time_delta_displayed": "0.254455000",
+          "frame.time_relative": "28.226185000",
+          "frame.number": "504",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50896",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "32",
+          "nordic_ble.rssi": "-45",
+          "nordic_ble.event_counter": "1827",
+          "nordic_ble.time": "381853537",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "254278",
+          "nordic_ble.delta_time_ss": "254454"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "456",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xbf90b1"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "ab:9c:92:06:00"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:45.042196000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:45.042196000 UTC",
+          "frame.time_epoch": "1766857125.042196000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.015002000",
+          "frame.time_delta_displayed": "0.015002000",
+          "frame.time_relative": "28.241187000",
+          "frame.number": "505",
+          "frame.len": "46",
+          "frame.cap_len": "46",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "39",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50898",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "30",
+          "nordic_ble.rssi": "-44",
+          "nordic_ble.event_counter": "1828",
+          "nordic_ble.time": "381868538",
+          "nordic_ble.packet_time": "240",
+          "nordic_ble.delta_time": "14825",
+          "nordic_ble.delta_time_ss": "15001"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "20"
+          },
+          "btle.length": "20",
+          "btle.l2cap_index": "457",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xbbaafa"
+        },
+        "btl2cap": {
+          "btl2cap.length": "16",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "ab:9e:91:06:00:9f:92:07:7f:a0:95:07:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:45.057196000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:45.057196000 UTC",
+          "frame.time_epoch": "1766857125.057196000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.015000000",
+          "frame.time_delta_displayed": "0.015000000",
+          "frame.time_relative": "28.256187000",
+          "frame.number": "506",
+          "frame.len": "46",
+          "frame.cap_len": "46",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "39",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50899",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "28",
+          "nordic_ble.rssi": "-42",
+          "nordic_ble.event_counter": "1829",
+          "nordic_ble.time": "381883538",
+          "nordic_ble.packet_time": "240",
+          "nordic_ble.delta_time": "14760",
+          "nordic_ble.delta_time_ss": "15000"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "0",
+            "btle.data_header.sequence_number": "0",
+            "btle.data_header.sequence_number_tree": {
+              "_ws.expert": {
+                "btle.retransmit": "",
+                "_ws.expert.message": "Retransmission",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.more_data": "1",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "20"
+          },
+          "btle.length": "20",
+          "btle.l2cap_index": "458",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xbbaafa"
+        },
+        "btl2cap": {
+          "btl2cap.length": "16",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "ab:9e:91:06:00:9f:92:07:7f:a0:95:07:7f"
+        }
+      }
+    }
+  },
+  {
+    "_index": "packets-2025-12-27",
+    "_type": "doc",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.section_number": "1",
+          "frame.interface_id": "0",
+          "frame.interface_id_tree": {
+            "frame.interface_name": "/dev/ttyACM1-4.2",
+            "frame.interface_description": "nRF Sniffer for Bluetooth LE"
+          },
+          "frame.encap_type": "186",
+          "frame.time": "Dec 27, 2025 18:38:45.057816000 CET",
+          "frame.time_utc": "Dec 27, 2025 17:38:45.057816000 UTC",
+          "frame.time_epoch": "1766857125.057816000",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_delta": "0.000620000",
+          "frame.time_delta_displayed": "0.000620000",
+          "frame.time_relative": "28.256807000",
+          "frame.number": "507",
+          "frame.len": "38",
+          "frame.cap_len": "38",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "nordic_ble:btle:btl2cap:btatt"
+        },
+        "nordic_ble": {
+          "nordic_ble.board_id": "1",
+          "nordic_ble.header": {
+            "nordic_ble.plen": "31",
+            "nordic_ble.protover": "3",
+            "nordic_ble.packet_counter": "50901",
+            "nordic_ble.packet_id": "6"
+          },
+          "nordic_ble.len": "10",
+          "nordic_ble.flags": "0x03",
+          "nordic_ble.flags_tree": {
+            "nordic_ble.crcok": "1",
+            "nordic_ble.direction": "1",
+            "nordic_ble.encrypted": "0",
+            "nordic_ble.mic_not_relevant": "0",
+            "nordic_ble.phy": "0",
+            "nordic_ble.flag_reserved7": "0"
+          },
+          "nordic_ble.channel": "28",
+          "nordic_ble.rssi": "-42",
+          "nordic_ble.event_counter": "1829",
+          "nordic_ble.time": "381884158",
+          "nordic_ble.packet_time": "176",
+          "nordic_ble.delta_time": "380",
+          "nordic_ble.delta_time_ss": "620"
+        },
+        "btle": {
+          "btle.access_address": "0x84c25f3f",
+          "btle.master_bd_addr": "5a:77:fe:20:ea:b3",
+          "btle.slave_bd_addr": "94:34:69:1f:4f:4f",
+          "btle.data_header": {
+            "btle.data_header.llid": "0x02",
+            "btle.data_header.next_expected_sequence_number": "1",
+            "btle.data_header.next_expected_sequence_number_tree": {
+              "_ws.expert": {
+                "btle.nack": "",
+                "_ws.expert.message": "Not acknowledged",
+                "_ws.expert.severity": "4194304",
+                "_ws.expert.group": "33554432"
+              }
+            },
+            "btle.data_header.sequence_number": "1",
+            "btle.data_header.more_data": "0",
+            "btle.data_header.cte_info_present": "0",
+            "btle.data_header.rfu": "0",
+            "btle.data_header.length": "12"
+          },
+          "btle.length": "12",
+          "btle.l2cap_index": "459",
+          "btle.connection_parameters_in": "105",
+          "btle.crc": "0xe44064"
+        },
+        "btl2cap": {
+          "btl2cap.length": "8",
+          "btl2cap.cid": "0x0004"
+        },
+        "btatt": {
+          "btatt.opcode": "0x52",
+          "btatt.opcode_tree": {
+            "btatt.opcode.authentication_signature": "0",
+            "btatt.opcode.command": "1",
+            "btatt.opcode.method": "0x12"
+          },
+          "btatt.handle": "0x001b",
+          "btatt.handle_tree": {
+            "btatt.service_uuid128": "03:b8:0e:5a:ed:e8:4b:33:a7:51:6c:e3:4e:c4:c7:00",
+            "btatt.uuid128": "77:72:e5:db:38:68:41:12:a1:a9:f2:66:9d:10:6b:f3"
+          },
+          "btatt.value": "ab:a1:91:07:7f"
+        }
+      }
+    }
+  }
+]

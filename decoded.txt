@@ -1,0 +1,1728 @@
+
+=== Decoding file: fullcap.txt ===
+
+Warning: Line 2: Invalid BLE-MIDI header: 0x00 (bit 7 must be set)
+Packet 1:
+  [ 2741] Ch 2 Note On            (6, vel=127)
+  [ 2742] Ch 6 Note On            (7, vel=127)
+  [ 2742] Ch 2 Note On            (7, vel=127)
+  [ 2779] Ch 2 Note Off           (7, vel=0)
+  [ 2688] Ch 2 Note On            (0, vel=None)
+  [ 2726] Ch 3 Note On            (15, vel=127)
+  [ 2688] Ch 3 Note Off           (16, vel=0)
+  [ 2688] Ch 8 Poly Aftertouch   
+  [ 2688] Ch 8 Poly Aftertouch   
+  [ 2688] Ch 8 Poly Aftertouch   
+  [ 2688] Ch 8 Poly Aftertouch   
+  [ 2688] Ch 8 Poly Aftertouch   
+  [ 2688] Ch 8 Poly Aftertouch   
+  [ 2688] Ch 8 Poly Aftertouch   
+  [ 2688] Ch 8 Poly Aftertouch   
+  [ 2688] Ch 8 Poly Aftertouch   
+  [ 2688] Ch 8 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 6 Poly Aftertouch   
+  [ 2688] Ch 8 Note Off           (106, vel=0)
+  [ 2688] Ch 8 Note Off           (107, vel=0)
+  [ 2688] Ch 8 Note Off           (108, vel=0)
+  [ 2688] Ch 8 Note On            (0, vel=None)
+  [ 2688] Ch13 Note Off           (22, vel=0)
+  [ 2688] Ch13 Note Off           (23, vel=0)
+  [ 2688] Ch13 Note Off           (24, vel=0)
+  [ 2688] Ch13 Note Off           (25, vel=0)
+  [ 2688] Ch13 Note Off           (26, vel=0)
+  [ 2688] Ch13 Note Off           (27, vel=0)
+  [ 2688] Ch13 Note Off           (28, vel=0)
+  [ 2688] Ch13 Note Off           (29, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=0)
+  [ 2688] Ch13 Note Off           (0, vel=None)
+
+Packet 2:
+  [ 4128] Ch 1 Note On            (0, vel=127)
+
+Packet 3:
+  [ 4881] Ch 2 Note Off           (12, vel=0)
+
+Packet 4:
+  [ 4881] Ch 3 Note Off           (12, vel=0)
+  [ 4881] Ch 1 Note Off           (1, vel=0)
+  [ 4864] Ch 1 Note Off           (1, vel=0)
+  [ 4881] Ch 2 Note Off           (7, vel=0)
+  [ 4864] Ch 3 Note Off           (6, vel=0)
+  [ 4882] Ch 5 Note Off           (6, vel=0)
+  [ 4882] Ch 2 Note Off           (5, vel=0)
+
+Packet 5:
+  [ 4882] Ch 5 Note Off           (5, vel=0)
+  [ 4882] Ch 3 Note Off           (7, vel=0)
+  [ 4882] Ch 6 Note Off           (7, vel=0)
+  [ 4883] Ch 3 Note Off           (6, vel=0)
+  [ 4883] Ch 6 Note Off           (6, vel=0)
+  [ 4883] Ch 3 Note Off           (5, vel=0)
+  [ 4883] Ch 6 Note Off           (5, vel=0)
+  [ 4883] Ch 7 Note On            (0, vel=127)
+  [ 4864] Ch 7 Note On            (1, vel=127)
+  [ 4864] Ch 7 Note On            (2, vel=127)
+  [ 4864] Ch 5 Note On            (3, vel=127)
+  [ 4864] Ch 5 Note Off           (4, vel=0)
+  [ 4864] Ch 5 Note Off           (5, vel=0)
+  [ 4864] Ch 5 Note Off           (6, vel=0)
+  [ 4864] Ch 5 Note Off           (7, vel=0)
+  [ 4864] Ch 5 Note On            (8, vel=127)
+  [ 4864] Ch 6 Note On            (9, vel=127)
+  [ 4864] Ch 6 Note On            (10, vel=127)
+  [ 4864] Ch 6 Note On            (11, vel=127)
+  [ 4864] Ch 6 Note Off           (12, vel=0)
+  [ 4864] Ch 6 Note Off           (13, vel=0)
+
+Packet 6:
+  [ 4885] Ch 7 Note Off           (14, vel=0)
+  [ 4864] Ch 7 Note Off           (15, vel=0)
+  [ 4864] Ch 7 Note Off           (16, vel=0)
+  [ 4864] Ch 7 Note Off           (17, vel=0)
+  [ 4864] Ch 7 Note Off           (18, vel=0)
+  [ 4864] Ch 7 Note Off           (19, vel=0)
+  [ 4864] Ch 7 Note Off           (20, vel=0)
+  [ 4864] Ch 7 Note Off           (21, vel=0)
+
+Packet 7:
+  [ 4887] Ch 7 Note Off           (22, vel=0)
+  [ 4864] Ch 7 Note Off           (23, vel=0)
+  [ 4864] Ch 7 Note Off           (24, vel=0)
+  [ 4864] Ch 7 Note Off           (25, vel=0)
+  [ 4864] Ch 7 Note Off           (26, vel=0)
+  [ 4864] Ch 7 Note Off           (27, vel=0)
+  [ 4864] Ch 7 Note Off           (28, vel=0)
+  [ 4864] Ch 7 Note Off           (29, vel=0)
+  [ 4864] Ch 7 Note Off           (30, vel=0)
+  [ 4864] Ch 7 Note Off           (31, vel=0)
+  [ 4864] Ch 9 Note Off           (32, vel=0)
+  [ 4864] Ch 9 Note Off           (33, vel=0)
+  [ 4864] Ch 9 Note Off           (34, vel=0)
+  [ 4864] Ch 9 Note Off           (35, vel=0)
+  [ 4864] Ch 9 Note Off           (36, vel=0)
+  [ 4864] Ch 9 Note Off           (37, vel=0)
+  [ 4864] Ch10 Note Off           (38, vel=0)
+  [ 4864] Ch10 Note Off           (39, vel=0)
+  [ 4864] Ch10 Note Off           (40, vel=0)
+  [ 4864] Ch10 Note Off           (41, vel=0)
+
+Packet 8:
+  [ 4889] Ch 7 Note Off           (42, vel=0)
+  [ 4864] Ch 7 Note Off           (43, vel=0)
+  [ 4864] Ch 7 Note Off           (44, vel=0)
+  [ 4864] Ch 7 Note Off           (45, vel=0)
+  [ 4864] Ch 7 Note Off           (46, vel=0)
+  [ 4864] Ch 7 Note Off           (47, vel=0)
+  [ 4864] Ch11 Note Off           (48, vel=0)
+  [ 4864] Ch11 Note Off           (49, vel=0)
+  [ 4864] Ch11 Note Off           (50, vel=0)
+  [ 4864] Ch11 Note Off           (51, vel=0)
+  [ 4864] Ch11 Note Off           (52, vel=0)
+  [ 4864] Ch11 Note Off           (53, vel=0)
+
+Packet 9:
+  [ 4891] Ch 7 Note Off           (54, vel=0)
+  [ 4864] Ch 7 Note Off           (55, vel=0)
+  [ 4864] Ch 7 Note Off           (56, vel=0)
+  [ 4864] Ch 7 Note Off           (57, vel=0)
+  [ 4864] Ch 7 Note Off           (58, vel=0)
+  [ 4864] Ch 7 Note Off           (59, vel=0)
+  [ 4864] Ch 7 Note Off           (60, vel=0)
+  [ 4864] Ch 7 Note Off           (61, vel=0)
+  [ 4864] Ch 7 Note Off           (62, vel=0)
+  [ 4864] Ch 7 Note Off           (63, vel=0)
+  [ 4864] Ch13 Note On            (64, vel=127)
+  [ 4864] Ch13 Note Off           (65, vel=0)
+  [ 4864] Ch13 Note Off           (66, vel=0)
+
+Packet 10:
+  [ 4892] Ch 7 Note Off           (67, vel=0)
+  [ 4864] Ch 7 Note Off           (68, vel=0)
+  [ 4864] Ch 7 Note Off           (69, vel=0)
+  [ 4864] Ch 7 Note Off           (70, vel=0)
+  [ 4864] Ch14 Note Off           (71, vel=0)
+  [ 4864] Ch14 Note On            (72, vel=127)
+  [ 4864] Ch14 Note Off           (73, vel=0)
+  [ 4864] Ch14 Note Off           (74, vel=0)
+  [ 4864] Ch14 Note Off           (75, vel=0)
+  [ 4864] Ch14 Note Off           (76, vel=0)
+
+Packet 11:
+  [ 4893] Ch 7 Note Off           (77, vel=0)
+  [ 4864] Ch15 Note Off           (78, vel=0)
+  [ 4864] Ch15 Note Off           (79, vel=0)
+  [ 4864] Ch15 Note Off           (80, vel=0)
+  [ 4864] Ch15 Note Off           (81, vel=0)
+  [ 4864] Ch15 Note Off           (82, vel=0)
+  [ 4864] Ch15 Note Off           (83, vel=0)
+  [ 4864] Ch15 Note Off           (84, vel=0)
+  [ 4864] Ch16 Note Off           (85, vel=0)
+  [ 4864] Ch16 Note Off           (86, vel=0)
+  [ 4864] Ch16 Note Off           (87, vel=0)
+  [ 4864] Ch16 Note Off           (88, vel=0)
+  [ 4864] Ch16 Note Off           (89, vel=0)
+  [ 4864] Ch16 Note Off           (90, vel=0)
+  [ 4864] Ch16 Note Off           (91, vel=0)
+  [ 4864] Ch16 Note Off           (92, vel=0)
+  [ 4864] Ch16 Note Off           (93, vel=0)
+  [ 4864] Ch16 Note Off           (94, vel=0)
+  [ 4864] Ch 1 Poly Aftertouch   
+  [ 4864] Ch 1 Poly Aftertouch   
+  [ 4864] Ch 1 Poly Aftertouch   
+  [ 4864] Ch 1 Poly Aftertouch   
+
+Packet 12:
+  [ 4896] Ch 7 Note Off           (99, vel=0)
+  [ 4864] Ch 7 Note Off           (100, vel=0)
+  [ 4864] Ch 2 Poly Aftertouch   
+  [ 4864] Ch 2 Poly Aftertouch   
+  [ 4864] Ch 2 Poly Aftertouch   
+  [ 4864] Ch 2 Poly Aftertouch   
+  [ 4864] Ch 2 Poly Aftertouch   
+  [ 4864] Ch 2 Poly Aftertouch   
+  [ 4864] Ch 2 Poly Aftertouch   
+  [ 4864] Ch 2 Poly Aftertouch   
+  [ 4864] Ch 2 Poly Aftertouch   
+  [ 4864] Ch 2 Poly Aftertouch   
+  [ 4864] Ch 3 Poly Aftertouch   
+  [ 4864] Ch 3 Poly Aftertouch   
+  [ 4864] Ch 3 Poly Aftertouch   
+  [ 4864] Ch 3 Poly Aftertouch   
+  [ 4864] Ch 3 Poly Aftertouch   
+  [ 4864] Ch 3 Poly Aftertouch   
+  [ 4864] Ch 3 Poly Aftertouch   
+  [ 4864] Ch 3 Poly Aftertouch   
+
+Packet 13:
+  [ 4898] Ch 7 Note Off           (119, vel=0)
+  [ 4864] Ch 7 Note Off           (120, vel=0)
+  [ 4864] Ch 7 Note Off           (121, vel=0)
+  [ 4864] Ch 4 Poly Aftertouch   
+  [ 4864] Ch 4 Poly Aftertouch   
+  [ 4864] Ch 4 Poly Aftertouch   
+  [ 4864] Ch 4 Poly Aftertouch   
+  [ 4864] Ch 4 Poly Aftertouch   
+  [ 4864] Ch 4 Poly Aftertouch   
+  [ 4899] Ch 8 Note On            (0, vel=127)
+  [ 4864] Ch 8 Note On            (1, vel=127)
+  [ 4864] Ch 8 Note On            (2, vel=127)
+  [ 4864] Ch 5 Poly Aftertouch   
+  [ 4864] Ch 5 Poly Aftertouch   
+  [ 4864] Ch 5 Poly Aftertouch   
+
+Packet 14:
+  [ 4900] Ch 8 Note Off           (6, vel=0)
+  [ 4864] Ch 8 Note Off           (7, vel=0)
+  [ 4864] Ch 8 Note On            (8, vel=127)
+  [ 4864] Ch 6 Poly Aftertouch   
+  [ 4864] Ch 6 Poly Aftertouch   
+  [ 4864] Ch 6 Poly Aftertouch   
+  [ 4864] Ch 6 Poly Aftertouch   
+  [ 4864] Ch 6 Poly Aftertouch   
+  [ 4864] Ch 6 Poly Aftertouch   
+  [ 4864] Ch 6 Poly Aftertouch   
+
+Packet 15:
+  [ 4902] Ch 8 Note Off           (16, vel=0)
+  [ 4864] Ch 8 Note Off           (17, vel=0)
+  [ 4864] Ch 8 Note Off           (18, vel=0)
+  [ 4864] Ch 8 Note Off           (19, vel=0)
+  [ 4864] Ch 8 Note Off           (20, vel=0)
+  [ 4864] Ch 8 Note Off           (21, vel=0)
+  [ 4864] Ch 8 Poly Aftertouch   
+
+Packet 16:
+  [ 4903] Ch 8 Note Off           (23, vel=0)
+  [ 4864] Ch 8 Note Off           (24, vel=0)
+  [ 4864] Ch 8 Note Off           (25, vel=0)
+  [ 4864] Ch 8 Note Off           (26, vel=0)
+  [ 4864] Ch 8 Note Off           (27, vel=0)
+  [ 4864] Ch 8 Note Off           (28, vel=0)
+  [ 4864] Ch 8 Note Off           (29, vel=0)
+  [ 4864] Ch 8 Note Off           (30, vel=0)
+  [ 4864] Ch 8 Note Off           (31, vel=0)
+  [ 4864] Ch 9 Poly Aftertouch   
+  [ 4864] Ch 9 Poly Aftertouch   
+  [ 4864] Ch 9 Poly Aftertouch   
+  [ 4864] Ch 9 Poly Aftertouch   
+  [ 4864] Ch 9 Poly Aftertouch   
+  [ 4864] Ch 9 Poly Aftertouch   
+
+Packet 17:
+  [ 4905] Ch 8 Note Off           (38, vel=0)
+  [ 4864] Ch 8 Note Off           (39, vel=0)
+  [ 4864] Ch 8 Note Off           (40, vel=0)
+  [ 4864] Ch 8 Note Off           (41, vel=0)
+  [ 4864] Ch 8 Note Off           (42, vel=0)
+  [ 4864] Ch 8 Note Off           (43, vel=0)
+  [ 4864] Ch 8 Note Off           (44, vel=0)
+  [ 4864] Ch 8 Note Off           (45, vel=0)
+  [ 4864] Ch 8 Note Off           (46, vel=0)
+  [ 4864] Ch 8 Note Off           (47, vel=0)
+  [ 4864] Ch11 Poly Aftertouch   
+  [ 4864] Ch11 Poly Aftertouch   
+  [ 4864] Ch11 Poly Aftertouch   
+  [ 4864] Ch11 Poly Aftertouch   
+
+Packet 18:
+  [ 4906] Ch 8 Note Off           (52, vel=0)
+  [ 4864] Ch 8 Note Off           (53, vel=0)
+  [ 4864] Ch12 Poly Aftertouch   
+  [ 4864] Ch12 Poly Aftertouch   
+  [ 4864] Ch12 Poly Aftertouch   
+  [ 4864] Ch12 Poly Aftertouch   
+  [ 4864] Ch12 Poly Aftertouch   
+  [ 4864] Ch12 Poly Aftertouch   
+  [ 4864] Ch12 Poly Aftertouch   
+  [ 4864] Ch12 Poly Aftertouch   
+  [ 4864] Ch12 Poly Aftertouch   
+  [ 4864] Ch12 Poly Aftertouch   
+  [ 4864] Ch12 Poly Aftertouch   
+
+Packet 19:
+  [ 4909] Ch 8 Note Off           (71, vel=0)
+  [ 4864] Ch 8 Note On            (72, vel=127)
+  [ 4864] Ch 8 Note Off           (73, vel=0)
+  [ 4864] Ch 8 Note Off           (74, vel=0)
+  [ 4864] Ch 8 Note Off           (75, vel=0)
+  [ 4864] Ch 8 Note Off           (76, vel=0)
+  [ 4864] Ch 8 Note Off           (77, vel=0)
+  [ 4864] Ch15 Poly Aftertouch   
+  [ 4864] Ch15 Poly Aftertouch   
+  [ 4864] Ch15 Poly Aftertouch   
+  [ 4864] Ch15 Poly Aftertouch   
+  [ 4864] Ch15 Poly Aftertouch   
+  [ 4864] Ch15 Poly Aftertouch   
+
+Packet 20:
+  [ 4910] Ch 8 Note Off           (84, vel=0)
+  [ 4864] Ch16 Poly Aftertouch   
+  [ 4864] Ch16 Poly Aftertouch   
+  [ 4864] Ch16 Poly Aftertouch   
+  [ 4864] Ch16 Poly Aftertouch   
+  [ 4864] Ch16 Poly Aftertouch   
+  [ 4864] Ch16 Poly Aftertouch   
+  [ 4864] Ch16 Poly Aftertouch   
+
+Packet 21:
+  [ 4911] Ch 8 Note Off           (92, vel=0)
+  [ 4864] Ch 8 Note Off           (93, vel=0)
+  [ 4864] Ch 1 Control Change     (CC#94=0)
+  [ 4864] Ch 1 Control Change     (CC#95=0)
+  [ 4864] Ch 1 Control Change     (CC#96=0)
+  [ 4864] Ch 1 Control Change     (CC#97=0)
+  [ 4864] Ch 1 Control Change     (CC#98=0)
+
+Packet 22:
+  [ 4912] Ch 8 Note Off           (99, vel=0)
+  [ 4864] Ch 8 Note Off           (100, vel=0)
+  [ 4864] Ch 2 Control Change     (CC#101=0)
+  [ 4864] Ch 2 Control Change     (CC#102=0)
+  [ 4864] Ch 2 Control Change     (CC#103=127)
+  [ 4864] Ch 2 Control Change     (CC#104=0)
+  [ 4864] Ch 2 Control Change     (CC#105=0)
+  [ 4864] Ch 2 Control Change     (CC#106=0)
+  [ 4864] Ch 2 Control Change     (CC#107=0)
+
+Packet 23:
+  [ 4913] Ch 8 Note Off           (108, vel=0)
+  [ 4864] Ch 8 Note Off           (109, vel=0)
+  [ 4864] Ch 8 Note Off           (110, vel=0)
+  [ 4864] Ch 8 Note Off           (111, vel=0)
+  [ 4864] Ch 8 Note Off           (112, vel=0)
+  [ 4864] Ch 8 Note Off           (113, vel=0)
+  [ 4864] Ch 8 Note Off           (114, vel=0)
+  [ 4864] Ch 8 Note Off           (115, vel=0)
+  [ 4864] Ch 8 Note Off           (116, vel=0)
+  [ 4864] Ch 8 Note Off           (117, vel=0)
+  [ 4864] Ch 8 Note Off           (118, vel=0)
+  [ 4864] Ch 8 Note Off           (119, vel=0)
+  [ 4864] Ch 8 Note Off           (120, vel=0)
+  [ 4864] Ch 8 Note Off           (121, vel=0)
+  [ 4864] Ch 8 Note Off           (122, vel=0)
+  [ 4864] Ch 8 Note Off           (123, vel=0)
+  [ 4864] Ch 8 Note Off           (124, vel=0)
+  [ 4864] Ch 8 Note Off           (125, vel=0)
+  [ 4864] Ch 8 Note Off           (126, vel=0)
+  [ 4864] Ch 8 Note Off           (127, vel=0)
+  [ 4914] Ch 2 Note On            (15, vel=127)
+  [ 4864] Ch 2 Note Off           (16, vel=0)
+  [ 4864] Ch 2 Note Off           (17, vel=0)
+  [ 4864] Ch 2 Note Off           (19, vel=0)
+  [ 4864] Ch 2 Note Off           (20, vel=0)
+  [ 4864] Ch 2 Note Off           (21, vel=0)
+  [ 4864] Ch 2 Note Off           (22, vel=0)
+  [ 4914] Ch 3 Note On            (15, vel=127)
+  [ 4864] Ch 3 Note Off           (16, vel=0)
+  [ 4864] Ch 4 Control Change     (CC#17=0)
+  [ 4864] Ch 4 Control Change     (CC#19=0)
+  [ 4864] Ch 4 Control Change     (CC#20=0)
+  [ 4864] Ch 4 Control Change     (CC#21=0)
+  [ 4864] Ch 4 Control Change     (CC#22=0)
+  [ 4915] Ch 1 Control Change     (CC#127=127)
+
+Packet 24:
+  [ 4933] Ch 3 Note On            (6, vel=127)
+
+Packet 25:
+  [ 4934] Ch 2 Note On            (6, vel=127)
+
+Packet 26:
+  [ 5101] Ch 3 Note Off           (6, vel=0)
+
+Packet 27:
+  [ 5102] Ch 2 Note Off           (6, vel=0)
+  [ 5102] Ch 3 Note On            (7, vel=127)
+  [ 5103] Ch 6 Note On            (7, vel=127)
+  [ 5103] Ch 2 Note On            (7, vel=127)
+
+Packet 28:
+  [ 5349] Ch 3 Note On            (6, vel=127)
+
+Packet 29:
+  [ 5350] Ch 2 Note On            (6, vel=127)
+
+Packet 30:
+  [ 5603] Ch 3 Note Off           (6, vel=0)
+
+Packet 31:
+  [ 5604] Ch 2 Note Off           (6, vel=0)
+
+Packet 32:
+  [ 5605] Ch 3 Note Off           (7, vel=0)
+  [ 5605] Ch 6 Note Off           (7, vel=0)
+  [ 5606] Ch 2 Note Off           (7, vel=0)
+
+Packet 33:
+  [ 5850] Ch 3 Note On            (6, vel=127)
+
+Packet 34:
+  [ 5852] Ch 2 Note On            (6, vel=127)
+
+Packet 35:
+  [ 6105] Ch 3 Note Off           (6, vel=0)
+
+Packet 36:
+  [ 6107] Ch 2 Note Off           (6, vel=0)
+
+Packet 37:
+  [ 6108] Ch 3 Note On            (7, vel=127)
+
+Packet 38:
+  [ 6109] Ch 6 Note On            (7, vel=127)
+  [ 6112] Ch 2 Note On            (7, vel=127)
+
+Packet 39:
+  [ 6350] Ch 3 Note On            (6, vel=127)
+
+Packet 40:
+  [ 6352] Ch 2 Note On            (6, vel=127)
+
+Packet 41:
+  [ 6603] Ch 3 Note Off           (6, vel=0)
+
+Packet 42:
+  [ 6604] Ch 2 Note Off           (6, vel=0)
+
+Packet 43:
+  [ 6605] Ch 3 Note Off           (7, vel=0)
+  [ 6605] Ch 6 Note Off           (7, vel=0)
+  [ 6606] Ch 2 Note Off           (7, vel=0)
+
+Packet 44:
+  [ 6849] Ch 3 Note On            (6, vel=127)
+
+Packet 45:
+  [ 6850] Ch 2 Note On            (6, vel=127)
+
+Packet 46:
+  [ 7103] Ch 3 Note Off           (6, vel=0)
+
+Packet 47:
+  [ 7105] Ch 2 Note Off           (6, vel=0)
+  [ 7105] Ch 3 Note On            (7, vel=127)
+  [ 7106] Ch 6 Note On            (7, vel=127)
+  [ 7106] Ch 2 Note On            (7, vel=127)
+
+Packet 48:
+  [ 7350] Ch 3 Note On            (6, vel=127)
+
+Packet 49:
+  [ 7352] Ch 2 Note On            (6, vel=127)
+
+Packet 50:
+  [ 7603] Ch 3 Note Off           (6, vel=0)
+
+Packet 51:
+  [ 7605] Ch 2 Note Off           (6, vel=0)
+  [ 7606] Ch 3 Note Off           (7, vel=0)
+  [ 7607] Ch 6 Note Off           (7, vel=0)
+
+Packet 52:
+  [ 7608] Ch 2 Note Off           (7, vel=0)
+
+Packet 53:
+  [ 7850] Ch 3 Note On            (6, vel=127)
+
+Packet 54:
+  [ 7853] Ch 2 Note On            (6, vel=127)
+
+Packet 55:
+  [ 8105] Ch 3 Note Off           (6, vel=0)
+
+Packet 56:
+  [ 8107] Ch 2 Note Off           (6, vel=0)
+  [ 8109] Ch 3 Note On            (7, vel=127)
+  [ 8109] Ch 6 Note On            (7, vel=127)
+  [ 8111] Ch 2 Note On            (7, vel=127)
+
+Packet 57:
+  [  158] Ch 3 Note On            (6, vel=127)
+
+Packet 58:
+  [  160] Ch 2 Note On            (6, vel=127)
+
+Packet 59:
+  [  413] Ch 3 Note Off           (6, vel=0)
+
+Packet 60:
+  [  415] Ch 2 Note Off           (6, vel=0)
+  [  417] Ch 3 Note Off           (7, vel=0)
+  [  418] Ch 6 Note Off           (7, vel=0)
+
+Packet 61:
+  [  420] Ch 2 Note Off           (7, vel=0)
+
+Packet 62:
+  [  658] Ch 3 Note On            (6, vel=127)
+
+Packet 63:
+  [  660] Ch 2 Note On            (6, vel=127)
+
+Packet 64:
+  [  913] Ch 3 Note Off           (6, vel=0)
+
+Packet 65:
+  [  915] Ch 2 Note Off           (6, vel=0)
+  [  917] Ch 3 Note On            (7, vel=127)
+  [  917] Ch 6 Note On            (7, vel=127)
+
+Packet 66:
+  [  919] Ch 2 Note On            (7, vel=127)
+
+Packet 67:
+  [ 1158] Ch 3 Note On            (6, vel=127)
+
+Packet 68:
+  [ 1160] Ch 2 Note On            (6, vel=127)
+
+Packet 69:
+  [ 1410] Ch 3 Note Off           (6, vel=0)
+
+Packet 70:
+  [ 1412] Ch 2 Note Off           (6, vel=0)
+  [ 1412] Ch 3 Note Off           (7, vel=0)
+  [ 1413] Ch 6 Note Off           (7, vel=0)
+  [ 1413] Ch 2 Note Off           (7, vel=0)
+
+Packet 71:
+  [ 1658] Ch 3 Note On            (6, vel=127)
+
+Packet 72:
+  [ 1660] Ch 2 Note On            (6, vel=127)
+
+Packet 73:
+  [ 1914] Ch 3 Note Off           (6, vel=0)
+
+Packet 74:
+  [ 1917] Ch 2 Note Off           (6, vel=0)
+  [ 1918] Ch 3 Note On            (7, vel=127)
+  [ 1919] Ch 6 Note On            (7, vel=127)
+
+Packet 75:
+  [ 1922] Ch 2 Note On            (7, vel=127)
+
+Packet 76:
+  [ 2158] Ch 3 Note On            (6, vel=127)
+
+Packet 77:
+  [ 2413] Ch 3 Note Off           (6, vel=0)
+
+Packet 78:
+  [ 2415] Ch 2 Note Off           (6, vel=0)
+
+Packet 79:
+  [ 2417] Ch 3 Note Off           (7, vel=0)
+  [ 2418] Ch 6 Note Off           (7, vel=0)
+  [ 2419] Ch 2 Note Off           (7, vel=0)
+
+Packet 80:
+  [ 2658] Ch 3 Note On            (6, vel=127)
+
+Packet 81:
+  [ 2660] Ch 2 Note On            (6, vel=127)
+
+Packet 82:
+  [ 2913] Ch 3 Note Off           (6, vel=0)
+
+Packet 83:
+  [ 2915] Ch 2 Note Off           (6, vel=0)
+  [ 2917] Ch 3 Note On            (7, vel=127)
+
+Packet 84:
+  [ 2918] Ch 6 Note On            (7, vel=127)
+  [ 2920] Ch 2 Note On            (7, vel=127)
+
+Packet 85:
+  [ 3157] Ch 3 Note On            (6, vel=127)
+
+Packet 86:
+  [ 3158] Ch 2 Note On            (6, vel=127)
+
+Packet 87:
+  [ 3414] Ch 3 Note Off           (6, vel=0)
+
+Packet 88:
+  [ 3417] Ch 2 Note Off           (6, vel=0)
+
+Packet 89:
+  [ 3421] Ch 3 Note Off           (7, vel=0)
+  [ 3421] Ch 6 Note Off           (7, vel=0)
+  [ 3424] Ch 2 Note Off           (7, vel=0)
+
+Packet 90:
+  [ 3667] Ch 3 Note On            (6, vel=127)
+
+Packet 91:
+  [ 3670] Ch 2 Note On            (6, vel=127)
+
+Packet 92:
+  [ 3911] Ch 3 Note Off           (6, vel=0)
+
+Packet 93:
+  [ 3913] Ch 2 Note Off           (6, vel=0)
+  [ 3913] Ch 3 Note On            (7, vel=127)
+  [ 3914] Ch 6 Note On            (7, vel=127)
+  [ 3914] Ch 2 Note On            (7, vel=127)
+
+Packet 94:
+  [ 4158] Ch 3 Note On            (6, vel=127)
+
+Packet 95:
+  [ 4160] Ch 2 Note On            (6, vel=127)
+
+Packet 96:
+  [ 4411] Ch 3 Note Off           (6, vel=0)
+
+Packet 97:
+  [ 4413] Ch 2 Note Off           (6, vel=0)
+
+Packet 98:
+  [ 4414] Ch 3 Note Off           (7, vel=0)
+
+Packet 99:
+  [ 4415] Ch 6 Note Off           (7, vel=0)
+  [ 4416] Ch 2 Note Off           (7, vel=0)
+
+Packet 100:
+  [ 4657] Ch 3 Note On            (6, vel=127)
+
+Packet 101:
+  [ 4658] Ch 2 Note On            (6, vel=127)
+
+Packet 102:
+  [ 4908] Ch 3 Note Off           (6, vel=0)
+
+Packet 103:
+  [ 4908] Ch 2 Note Off           (6, vel=0)
+  [ 4909] Ch 3 Note On            (7, vel=127)
+  [ 4909] Ch 6 Note On            (7, vel=127)
+  [ 4909] Ch 2 Note On            (7, vel=127)
+
+Packet 104:
+  [ 5163] Ch 3 Note On            (6, vel=127)
+
+Packet 105:
+  [ 5163] Ch 2 Note On            (6, vel=127)
+
+Packet 106:
+  [ 5410] Ch 3 Note Off           (6, vel=0)
+
+Packet 107:
+  [ 5410] Ch 2 Note Off           (6, vel=0)
+  [ 5411] Ch 3 Note Off           (7, vel=0)
+  [ 5411] Ch 6 Note Off           (7, vel=0)
+  [ 5411] Ch 2 Note Off           (7, vel=0)
+
+Packet 108:
+  [ 5663] Ch 3 Note On            (6, vel=127)
+
+Packet 109:
+  [ 5664] Ch 2 Note On            (6, vel=127)
+
+Packet 110:
+  [ 5908] Ch 3 Note Off           (6, vel=0)
+
+Packet 111:
+  [ 5909] Ch 2 Note Off           (6, vel=0)
+
+Packet 112:
+  [ 5910] Ch 3 Note On            (7, vel=127)
+  [ 5910] Ch 6 Note On            (7, vel=127)
+  [ 5910] Ch 2 Note On            (7, vel=127)
+
+Packet 113:
+  [ 6157] Ch 3 Note On            (6, vel=127)
+
+Packet 114:
+  [ 6158] Ch 2 Note On            (6, vel=127)
+
+Packet 115:
+  [ 6409] Ch 3 Note Off           (6, vel=0)
+
+Packet 116:
+  [ 6410] Ch 2 Note Off           (6, vel=0)
+
+Packet 117:
+  [ 6410] Ch 3 Note Off           (7, vel=0)
+  [ 6410] Ch 6 Note Off           (7, vel=0)
+  [ 6411] Ch 2 Note Off           (7, vel=0)
+
+Packet 118:
+  [ 6664] Ch 3 Note On            (6, vel=127)
+
+Packet 119:
+  [ 6665] Ch 2 Note On            (6, vel=127)
+
+Packet 120:
+  [ 6913] Ch 3 Note Off           (6, vel=0)
+
+Packet 121:
+  [ 6914] Ch 2 Note Off           (6, vel=0)
+  [ 6914] Ch 3 Note On            (7, vel=127)
+
+Packet 122:
+  [ 6914] Ch 6 Note On            (7, vel=127)
+
+Packet 123:
+  [ 6915] Ch 2 Note On            (7, vel=127)
+
+Packet 124:
+  [ 7157] Ch 3 Note On            (6, vel=127)
+
+Packet 125:
+  [ 7158] Ch 2 Note On            (6, vel=127)
+
+Packet 126:
+  [ 7409] Ch 3 Note Off           (6, vel=0)
+
+Packet 127:
+  [ 7410] Ch 2 Note Off           (6, vel=0)
+  [ 7410] Ch 3 Note Off           (7, vel=0)
+  [ 7410] Ch 6 Note Off           (7, vel=0)
+  [ 7411] Ch 2 Note Off           (7, vel=0)
+
+Packet 128:
+  [ 7492] Ch 3 Note On            (5, vel=127)
+
+Packet 129:
+  [ 7493] Ch 6 Note On            (5, vel=127)
+
+Packet 130:
+  [ 7500] Ch 2 Note On            (5, vel=127)
+
+Packet 131:
+  [ 7500] Ch 5 Note On            (5, vel=127)
+
+Packet 132:
+  [ 7657] Ch 3 Note On            (6, vel=127)
+
+Packet 133:
+  [ 7658] Ch 2 Note On            (6, vel=127)
+
+Packet 134:
+  [ 7877] Ch 3 Note Off           (5, vel=0)
+
+Packet 135:
+  [ 7878] Ch 6 Note Off           (5, vel=0)
+
+Packet 136:
+  [ 7907] Ch 3 Note Off           (6, vel=0)
+
+Packet 137:
+  [ 7908] Ch 2 Note Off           (6, vel=0)
+  [ 7909] Ch 3 Note On            (7, vel=127)
+  [ 7909] Ch 6 Note On            (7, vel=127)
+
+Packet 138:
+  [ 7909] Ch 2 Note On            (7, vel=127)
+
+Packet 139:
+  [ 8144] Ch 3 Note On            (5, vel=127)
+
+Packet 140:
+  [ 8144] Ch 6 Note On            (5, vel=127)
+
+Packet 141:
+  [ 8157] Ch 3 Note On            (6, vel=127)
+
+Packet 142:
+  [ 8160] Ch 2 Note On            (6, vel=127)
+
+Packet 143:
+  [   96] Ch 3 Note Off           (5, vel=0)
+
+Packet 144:
+  [   97] Ch 6 Note Off           (5, vel=0)
+
+Packet 145:
+  [  217] Ch 3 Note Off           (6, vel=0)
+
+Packet 146:
+  [  218] Ch 2 Note Off           (6, vel=0)
+  [  218] Ch 3 Note Off           (7, vel=0)
+  [  218] Ch 6 Note Off           (7, vel=0)
+  [  219] Ch 2 Note Off           (7, vel=0)
+
+Packet 147:
+  [  263] Ch 3 Note On            (5, vel=127)
+
+Packet 148:
+  [  263] Ch 6 Note On            (5, vel=127)
+
+Packet 149:
+  [  430] Ch 3 Note Off           (5, vel=0)
+
+Packet 150:
+  [  430] Ch 6 Note Off           (5, vel=0)
+
+Packet 151:
+  [  465] Ch 3 Note On            (6, vel=127)
+
+Packet 152:
+  [  466] Ch 2 Note On            (6, vel=127)
+
+Packet 153:
+  [  718] Ch 3 Note Off           (6, vel=0)
+
+Packet 154:
+  [  719] Ch 2 Note Off           (6, vel=0)
+  [  719] Ch 3 Note On            (7, vel=127)
+  [  719] Ch 6 Note On            (7, vel=127)
+  [  720] Ch 2 Note On            (7, vel=127)
+
+Packet 155:
+  [  965] Ch 3 Note On            (6, vel=127)
+
+Packet 156:
+  [  966] Ch 2 Note On            (6, vel=127)
+
+Packet 157:
+  [ 1137] Ch 3 Note On            (5, vel=127)
+
+Packet 158:
+  [ 1138] Ch 6 Note On            (5, vel=127)
+
+Packet 159:
+  [ 1217] Ch 3 Note Off           (6, vel=0)
+
+Packet 160:
+  [ 1218] Ch 2 Note Off           (6, vel=0)
+  [ 1218] Ch 3 Note Off           (7, vel=0)
+  [ 1218] Ch 6 Note Off           (7, vel=0)
+  [ 1219] Ch 2 Note Off           (7, vel=0)
+
+Packet 161:
+  [ 1465] Ch 3 Note On            (6, vel=127)
+
+Packet 162:
+  [ 1466] Ch 2 Note On            (6, vel=127)
+
+Packet 163:
+  [ 1718] Ch 3 Note Off           (6, vel=0)
+
+Packet 164:
+  [ 1719] Ch 2 Note Off           (6, vel=0)
+  [ 1719] Ch 3 Note On            (7, vel=127)
+  [ 1719] Ch 6 Note On            (7, vel=127)
+  [ 1720] Ch 2 Note On            (7, vel=127)
+
+Packet 165:
+  [ 1730] Ch 3 Note Off           (5, vel=0)
+
+Packet 166:
+  [ 1731] Ch 6 Note Off           (5, vel=0)
+
+Packet 167:
+  [ 1965] Ch 3 Note On            (6, vel=127)
+
+Packet 168:
+  [ 1965] Ch 3 Note On            (6, vel=127)
+
+Packet 169:
+  [ 1966] Ch 2 Note On            (6, vel=127)
+
+Packet 170:
+  [ 2064] Ch 3 Note On            (5, vel=127)
+
+Packet 171:
+  [ 2064] Ch 6 Note On            (5, vel=127)
+
+Packet 172:
+  [ 2218] Ch 3 Note Off           (6, vel=0)
+
+Packet 173:
+  [ 2219] Ch 2 Note Off           (6, vel=0)
+  [ 2219] Ch 3 Note Off           (7, vel=0)
+  [ 2219] Ch 6 Note Off           (7, vel=0)
+  [ 2220] Ch 2 Note Off           (7, vel=0)
+
+Packet 174:
+  [ 2465] Ch 3 Note On            (6, vel=127)
+
+Packet 175:
+  [ 2466] Ch 2 Note On            (6, vel=127)
+
+Packet 176:
+  [ 2718] Ch 3 Note Off           (6, vel=0)
+
+Packet 177:
+  [ 2719] Ch 2 Note Off           (6, vel=0)
+  [ 2719] Ch 3 Note On            (7, vel=127)
+  [ 2720] Ch 6 Note On            (7, vel=127)
+  [ 2720] Ch 2 Note On            (7, vel=127)
+
+Packet 178:
+  [ 2886] Ch 2 Note Off           (5, vel=0)
+
+Packet 179:
+  [ 2886] Ch 5 Note Off           (5, vel=0)
+
+Packet 180:
+  [ 2965] Ch 3 Note On            (6, vel=127)
+
+Packet 181:
+  [ 2966] Ch 2 Note On            (6, vel=127)
+
+Packet 182:
+  [ 3218] Ch 3 Note Off           (6, vel=0)
+
+Packet 183:
+  [ 3219] Ch 2 Note Off           (6, vel=0)
+  [ 3219] Ch 3 Note Off           (7, vel=0)
+  [ 3220] Ch 6 Note Off           (7, vel=0)
+  [ 3220] Ch 2 Note Off           (7, vel=0)
+
+Packet 184:
+  [ 3442] Ch 3 Note Off           (5, vel=0)
+
+Packet 185:
+  [ 3443] Ch 6 Note Off           (5, vel=0)
+
+Packet 186:
+  [ 3465] Ch 3 Note On            (6, vel=127)
+
+Packet 187:
+  [ 3466] Ch 2 Note On            (6, vel=127)
+
+Packet 188:
+  [ 3719] Ch 3 Note Off           (6, vel=0)
+
+Packet 189:
+  [ 3720] Ch 2 Note Off           (6, vel=0)
+  [ 3721] Ch 3 Note On            (7, vel=127)
+  [ 3721] Ch 6 Note On            (7, vel=127)
+  [ 3721] Ch 2 Note On            (7, vel=127)
+
+Packet 190:
+  [ 3824] Ch 3 Note On            (5, vel=127)
+
+Packet 191:
+  [ 3825] Ch 6 Note On            (5, vel=127)
+
+Packet 192:
+  [ 3827] Ch 2 Note On            (5, vel=127)
+  [ 3828] Ch 5 Note On            (5, vel=127)
+
+Packet 193:
+  [ 3965] Ch 3 Note On            (6, vel=127)
+
+Packet 194:
+  [ 3966] Ch 2 Note On            (6, vel=127)
+
+Packet 195:
+  [ 4219] Ch 3 Note Off           (6, vel=0)
+
+Packet 196:
+  [ 4220] Ch 2 Note Off           (6, vel=0)
+  [ 4220] Ch 3 Note Off           (7, vel=0)
+  [ 4220] Ch 6 Note Off           (7, vel=0)
+  [ 4221] Ch 2 Note Off           (7, vel=0)
+
+Packet 197:
+  [ 4465] Ch 3 Note On            (6, vel=127)
+
+Packet 198:
+  [ 4466] Ch 2 Note On            (6, vel=127)
+
+Packet 199:
+  [ 4568] Ch 2 Note Off           (5, vel=0)
+
+Packet 200:
+  [ 4569] Ch 5 Note Off           (5, vel=0)
+
+Packet 201:
+  [ 4699] Ch 3 Note Off           (5, vel=0)
+
+Packet 202:
+  [ 4699] Ch 6 Note Off           (5, vel=0)
+
+Packet 203:
+  [ 4719] Ch 3 Note Off           (6, vel=0)
+
+Packet 204:
+  [ 4720] Ch 2 Note Off           (6, vel=0)
+  [ 4720] Ch 3 Note On            (7, vel=127)
+  [ 4720] Ch 6 Note On            (7, vel=127)
+  [ 4721] Ch 2 Note On            (7, vel=127)
+
+Packet 205:
+  [ 4881] Ch 2 Note On            (5, vel=127)
+
+Packet 206:
+  [ 4882] Ch 5 Note On            (5, vel=127)
+
+Packet 207:
+  [ 4884] Ch 3 Note On            (5, vel=127)
+  [ 4884] Ch 6 Note On            (5, vel=127)
+
+Packet 208:
+  [ 4943] Ch 3 Note Off           (5, vel=0)
+
+Packet 209:
+  [ 4943] Ch 6 Note Off           (5, vel=0)
+
+Packet 210:
+  [ 4966] Ch 3 Note On            (6, vel=127)
+
+Packet 211:
+  [ 4967] Ch 2 Note On            (6, vel=127)
+
+Packet 212:
+  [ 5124] Ch 2 Note Off           (5, vel=0)
+
+Packet 213:
+  [ 5125] Ch 5 Note Off           (5, vel=0)
+
+Packet 214:
+  [ 5219] Ch 3 Note Off           (6, vel=0)
+
+Packet 215:
+  [ 5219] Ch 2 Note Off           (6, vel=0)
+  [ 5220] Ch 3 Note Off           (7, vel=0)
+  [ 5220] Ch 6 Note Off           (7, vel=0)
+  [ 5220] Ch 2 Note Off           (7, vel=0)
+
+Packet 216:
+  [ 5235] Ch 3 Note On            (5, vel=127)
+
+Packet 217:
+  [ 5236] Ch 6 Note On            (5, vel=127)
+  [ 5237] Ch 2 Note On            (5, vel=127)
+  [ 5238] Ch 5 Note On            (5, vel=127)
+
+Packet 218:
+  [ 5346] Ch 2 Note Off           (5, vel=0)
+
+Packet 219:
+  [ 5347] Ch 5 Note Off           (5, vel=0)
+
+Packet 220:
+  [ 5436] Ch 3 Note Off           (5, vel=0)
+
+Packet 221:
+  [ 5436] Ch 6 Note Off           (5, vel=0)
+
+Packet 222:
+  [ 5465] Ch 3 Note On            (6, vel=127)
+
+Packet 223:
+  [ 5466] Ch 2 Note On            (6, vel=127)
+
+Packet 224:
+  [ 5571] Ch 2 Note On            (5, vel=127)
+
+Packet 225:
+  [ 5571] Ch 5 Note On            (5, vel=127)
+
+Packet 226:
+  [ 5574] Ch 3 Note On            (5, vel=127)
+  [ 5574] Ch 6 Note On            (5, vel=127)
+
+Packet 227:
+  [ 5584] Ch 3 Note Off           (5, vel=0)
+
+Packet 228:
+  [ 5584] Ch 6 Note Off           (5, vel=0)
+
+Packet 229:
+  [ 5719] Ch 3 Note Off           (6, vel=0)
+
+Packet 230:
+  [ 5720] Ch 2 Note Off           (6, vel=0)
+  [ 5720] Ch 3 Note On            (7, vel=127)
+  [ 5720] Ch 6 Note On            (7, vel=127)
+  [ 5721] Ch 2 Note On            (7, vel=127)
+
+Packet 231:
+  [ 5736] Ch 3 Note On            (5, vel=127)
+
+Packet 232:
+  [ 5737] Ch 6 Note On            (5, vel=127)
+
+Packet 233:
+  [ 5749] Ch 2 Note Off           (5, vel=0)
+
+Packet 234:
+  [ 5750] Ch 5 Note Off           (5, vel=0)
+
+Packet 235:
+  [ 5880] Ch 3 Note Off           (5, vel=0)
+
+Packet 236:
+  [ 5881] Ch 6 Note Off           (5, vel=0)
+
+Packet 237:
+  [ 5923] Ch 2 Note On            (5, vel=127)
+
+Packet 238:
+  [ 5924] Ch 5 Note On            (5, vel=127)
+  [ 5925] Ch 3 Note On            (5, vel=127)
+  [ 5925] Ch 6 Note On            (5, vel=127)
+
+Packet 239:
+  [ 5965] Ch 3 Note On            (6, vel=127)
+
+Packet 240:
+  [ 5966] Ch 2 Note On            (6, vel=127)
+
+Packet 241:
+  [ 6054] Ch 3 Note Off           (5, vel=0)
+
+Packet 242:
+  [ 6054] Ch 6 Note Off           (5, vel=0)
+
+Packet 243:
+  [ 6076] Ch 2 Note Off           (5, vel=0)
+
+Packet 244:
+  [ 6076] Ch 5 Note Off           (5, vel=0)
+
+Packet 245:
+  [ 6219] Ch 3 Note Off           (6, vel=0)
+
+Packet 246:
+  [ 6220] Ch 2 Note Off           (6, vel=0)
+  [ 6220] Ch 3 Note Off           (7, vel=0)
+  [ 6220] Ch 6 Note Off           (7, vel=0)
+  [ 6221] Ch 2 Note Off           (7, vel=0)
+
+Packet 247:
+  [ 6243] Ch 3 Note On            (5, vel=127)
+
+Packet 248:
+  [ 6243] Ch 6 Note On            (5, vel=127)
+  [ 6244] Ch 2 Note On            (5, vel=127)
+  [ 6244] Ch 5 Note On            (5, vel=127)
+
+Packet 249:
+  [ 6249] Ch 2 Note Off           (5, vel=0)
+
+Packet 250:
+  [ 6249] Ch 5 Note Off           (5, vel=0)
+
+Packet 251:
+  [ 6249] Ch 5 Note Off           (5, vel=0)
+
+Packet 252:
+  [ 6410] Ch 3 Note Off           (5, vel=0)
+
+Packet 253:
+  [ 6410] Ch 6 Note Off           (5, vel=0)
+
+Packet 254:
+  [ 6465] Ch 3 Note On            (6, vel=127)
+
+Packet 255:
+  [ 6466] Ch 2 Note On            (6, vel=127)
+
+Packet 256:
+  [ 6565] Ch 3 Note On            (5, vel=127)
+
+Packet 257:
+  [ 6565] Ch 6 Note On            (5, vel=127)
+  [ 6566] Ch 2 Note On            (5, vel=127)
+  [ 6566] Ch 5 Note On            (5, vel=127)
+
+Packet 258:
+  [ 6665] Ch 2 Note Off           (5, vel=0)
+
+Packet 259:
+  [ 6665] Ch 5 Note Off           (5, vel=0)
+
+Packet 260:
+  [ 6719] Ch 3 Note Off           (6, vel=0)
+
+Packet 261:
+  [ 6719] Ch 3 Note Off           (6, vel=0)
+
+Packet 262:
+  [ 6720] Ch 2 Note Off           (6, vel=0)
+  [ 6720] Ch 3 Note On            (7, vel=127)
+  [ 6720] Ch 6 Note On            (7, vel=127)
+  [ 6721] Ch 2 Note On            (7, vel=127)
+
+Packet 263:
+  [ 6832] Ch 3 Note Off           (5, vel=0)
+
+Packet 264:
+  [ 6832] Ch 6 Note Off           (5, vel=0)
+
+Packet 265:
+  [ 6965] Ch 3 Note On            (6, vel=127)
+
+Packet 266:
+  [ 6966] Ch 2 Note On            (6, vel=127)
+
+Packet 267:
+  [ 7090] Ch 3 Note On            (5, vel=127)
+
+Packet 268:
+  [ 7091] Ch 6 Note On            (5, vel=127)
+
+Packet 269:
+  [ 7093] Ch 2 Note On            (5, vel=127)
+  [ 7094] Ch 5 Note On            (5, vel=127)
+
+Packet 270:
+  [ 7220] Ch 3 Note Off           (6, vel=0)
+
+Packet 271:
+  [ 7220] Ch 2 Note Off           (6, vel=0)
+  [ 7221] Ch 3 Note Off           (7, vel=0)
+  [ 7221] Ch 6 Note Off           (7, vel=0)
+  [ 7221] Ch 2 Note Off           (7, vel=0)
+
+Packet 272:
+  [ 7345] Ch 3 Note Off           (5, vel=0)
+
+Packet 273:
+  [ 7345] Ch 6 Note Off           (5, vel=0)
+
+Packet 274:
+  [ 7465] Ch 3 Note On            (6, vel=127)
+
+Packet 275:
+  [ 7466] Ch 2 Note On            (6, vel=127)
+
+Packet 276:
+  [ 7690] Ch 2 Note Off           (5, vel=0)
+
+Packet 277:
+  [ 7691] Ch 5 Note Off           (5, vel=0)
+
+Packet 278:
+  [ 7720] Ch 3 Note Off           (6, vel=0)
+
+Packet 279:
+  [ 7721] Ch 2 Note Off           (6, vel=0)
+
+Packet 280:
+  [ 7721] Ch 3 Note On            (7, vel=127)
+
+Packet 281:
+  [ 7721] Ch 6 Note On            (7, vel=127)
+  [ 7721] Ch 2 Note On            (7, vel=127)
+
+Packet 282:
+  [ 7768] Ch 3 Note On            (5, vel=127)
+
+Packet 283:
+  [ 7769] Ch 6 Note On            (5, vel=127)
+
+Packet 284:
+  [ 7771] Ch 2 Note On            (5, vel=127)
+
+Packet 285:
+  [ 7771] Ch 5 Note On            (5, vel=127)
+
+Packet 286:
+  [ 7965] Ch 3 Note On            (6, vel=127)
+
+Packet 287:
+  [ 7968] Ch 2 Note On            (6, vel=127)
+
+Packet 288:
+  [ 7976] Ch 3 Note Off           (5, vel=0)
+
+Packet 289:
+  [ 7977] Ch 6 Note Off           (5, vel=0)
+
+Packet 290:
+  [ 7980] Ch 2 Note Off           (5, vel=0)
+  [ 7981] Ch 5 Note Off           (5, vel=0)
+
+Packet 291:
+  [ 8132] Ch 3 Note On            (5, vel=127)
+
+Packet 292:
+  [ 8132] Ch 6 Note On            (5, vel=127)
+  [ 8133] Ch 2 Note On            (5, vel=127)
+  [ 8133] Ch 5 Note On            (5, vel=127)
+
+Packet 293:
+  [ 8165] Ch 2 Note Off           (5, vel=0)
+
+Packet 294:
+  [ 8165] Ch 5 Note Off           (5, vel=0)
+
+Packet 295:
+  [   28] Ch 3 Note Off           (6, vel=0)
+
+Packet 296:
+  [   28] Ch 2 Note Off           (6, vel=0)
+  [   29] Ch 3 Note Off           (7, vel=0)
+  [   29] Ch 6 Note Off           (7, vel=0)
+  [   29] Ch 2 Note Off           (7, vel=0)
+
+Packet 297:
+  [  130] Ch 3 Note Off           (5, vel=0)
+
+Packet 298:
+  [  130] Ch 6 Note Off           (5, vel=0)
+
+Packet 299:
+  [  173] Ch 2 Note On            (5, vel=127)
+
+Packet 300:
+  [  173] Ch 5 Note On            (5, vel=127)
+  [  174] Ch 3 Note On            (5, vel=127)
+  [  174] Ch 6 Note On            (5, vel=127)
+
+Packet 301:
+  [  273] Ch 3 Note On            (6, vel=127)
+
+Packet 302:
+  [  273] Ch 2 Note On            (6, vel=127)
+
+Packet 303:
+  [  316] Ch 3 Note Off           (5, vel=0)
+
+Packet 304:
+  [  316] Ch 6 Note Off           (5, vel=0)
+
+Packet 305:
+  [  360] Ch 2 Note Off           (5, vel=0)
+
+Packet 306:
+  [  361] Ch 5 Note Off           (5, vel=0)
+
+Packet 307:
+  [  529] Ch 3 Note Off           (6, vel=0)
+
+Packet 308:
+  [  529] Ch 2 Note Off           (6, vel=0)
+  [  529] Ch 3 Note On            (7, vel=127)
+  [  530] Ch 6 Note On            (7, vel=127)
+  [  530] Ch 2 Note On            (7, vel=127)
+
+Packet 309:
+  [  538] Ch 3 Note On            (5, vel=127)
+
+Packet 310:
+  [  538] Ch 6 Note On            (5, vel=127)
+  [  539] Ch 2 Note On            (5, vel=127)
+  [  539] Ch 5 Note On            (5, vel=127)
+
+Packet 311:
+  [  619] Ch 2 Note Off           (5, vel=0)
+
+Packet 312:
+  [  619] Ch 5 Note Off           (5, vel=0)
+
+Packet 313:
+  [  738] Ch 3 Note Off           (5, vel=0)
+
+Packet 314:
+  [  738] Ch 6 Note Off           (5, vel=0)
+
+Packet 315:
+  [  773] Ch 3 Note On            (6, vel=127)
+
+Packet 316:
+  [  773] Ch 2 Note On            (6, vel=127)
+
+Packet 317:
+  [  817] Ch 2 Note On            (5, vel=127)
+
+Packet 318:
+  [  817] Ch 5 Note On            (5, vel=127)
+  [  818] Ch 3 Note On            (5, vel=127)
+  [  818] Ch 6 Note On            (5, vel=127)
+
+Packet 319:
+  [  907] Ch 3 Note Off           (5, vel=0)
+
+Packet 320:
+  [  907] Ch 6 Note Off           (5, vel=0)
+
+Packet 321:
+  [  999] Ch 2 Note Off           (5, vel=0)
+
+Packet 322:
+  [ 1000] Ch 5 Note Off           (5, vel=0)
+
+Packet 323:
+  [ 1027] Ch 3 Note Off           (6, vel=0)
+
+Packet 324:
+  [ 1028] Ch 2 Note Off           (6, vel=0)
+  [ 1028] Ch 3 Note Off           (7, vel=0)
+  [ 1029] Ch 6 Note Off           (7, vel=0)
+  [ 1029] Ch 2 Note Off           (7, vel=0)
+
+Packet 325:
+  [ 1107] Ch 3 Note On            (5, vel=127)
+
+Packet 326:
+  [ 1107] Ch 6 Note On            (5, vel=127)
+  [ 1108] Ch 2 Note On            (5, vel=127)
+  [ 1108] Ch 5 Note On            (5, vel=127)
+
+Packet 327:
+  [ 1273] Ch 3 Note On            (6, vel=127)
+
+Packet 328:
+  [ 1274] Ch 2 Note On            (6, vel=127)
+
+Packet 329:
+  [ 1307] Ch 3 Note Off           (5, vel=0)
+
+Packet 330:
+  [ 1307] Ch 6 Note Off           (5, vel=0)
+
+Packet 331:
+  [ 1351] Ch 2 Note Off           (5, vel=0)
+
+Packet 332:
+  [ 1351] Ch 5 Note Off           (5, vel=0)
+
+Packet 333:
+  [ 1528] Ch 3 Note Off           (6, vel=0)
+
+Packet 334:
+  [ 1529] Ch 2 Note Off           (6, vel=0)
+  [ 1529] Ch 3 Note On            (7, vel=127)
+  [ 1529] Ch 6 Note On            (7, vel=127)
+  [ 1530] Ch 2 Note On            (7, vel=127)
+
+Packet 335:
+  [ 1563] Ch 3 Note On            (5, vel=127)
+
+Packet 336:
+  [ 1563] Ch 6 Note On            (5, vel=127)
+  [ 1564] Ch 2 Note On            (5, vel=127)
+  [ 1564] Ch 5 Note On            (5, vel=127)
+
+Packet 337:
+  [ 1587] Ch 2 Note Off           (5, vel=0)
+
+Packet 338:
+  [ 1587] Ch 5 Note Off           (5, vel=0)
+
+Packet 339:
+  [ 1708] Ch 3 Note Off           (5, vel=0)
+
+Packet 340:
+  [ 1708] Ch 6 Note Off           (5, vel=0)
+
+Packet 341:
+  [ 1773] Ch 3 Note On            (6, vel=127)
+
+Packet 342:
+  [ 1774] Ch 2 Note On            (6, vel=127)
+
+Packet 343:
+  [ 1788] Ch 2 Note On            (5, vel=127)
+
+Packet 344:
+  [ 1788] Ch 5 Note On            (5, vel=127)
+  [ 1789] Ch 3 Note On            (5, vel=127)
+  [ 1789] Ch 6 Note On            (5, vel=127)
+
+Packet 345:
+  [ 1885] Ch 3 Note Off           (5, vel=0)
+
+Packet 346:
+  [ 1885] Ch 6 Note Off           (5, vel=0)
+
+Packet 347:
+  [ 2028] Ch 3 Note Off           (6, vel=0)
+
+Packet 348:
+  [ 2029] Ch 2 Note Off           (6, vel=0)
+  [ 2029] Ch 3 Note Off           (7, vel=0)
+  [ 2029] Ch 6 Note Off           (7, vel=0)
+  [ 2030] Ch 2 Note Off           (7, vel=0)
+
+Packet 349:
+  [ 2063] Ch 3 Note On            (5, vel=127)
+
+Packet 350:
+  [ 2064] Ch 6 Note On            (5, vel=127)
+
+Packet 351:
+  [ 2222] Ch 2 Note Off           (5, vel=0)
+
+Packet 352:
+  [ 2222] Ch 5 Note Off           (5, vel=0)
+
+Packet 353:
+  [ 2240] Ch 3 Note Off           (5, vel=0)
+
+Packet 354:
+  [ 2240] Ch 6 Note Off           (5, vel=0)
+
+Packet 355:
+  [ 2273] Ch 3 Note On            (6, vel=127)
+
+Packet 356:
+  [ 2274] Ch 2 Note On            (6, vel=127)
+
+Packet 357:
+  [ 2388] Ch 3 Note On            (5, vel=127)
+
+Packet 358:
+  [ 2389] Ch 6 Note On            (5, vel=127)
+  [ 2391] Ch 2 Note On            (5, vel=127)
+  [ 2392] Ch 5 Note On            (5, vel=127)
+
+Packet 359:
+  [ 2429] Ch 2 Note Off           (5, vel=0)
+
+Packet 360:
+  [ 2429] Ch 5 Note Off           (5, vel=0)
+
+Packet 361:
+  [ 2530] Ch 3 Note Off           (6, vel=0)
+
+Packet 362:
+  [ 2530] Ch 2 Note Off           (6, vel=0)
+  [ 2531] Ch 3 Note On            (7, vel=127)
+  [ 2531] Ch 6 Note On            (7, vel=127)
+
+Packet 363:
+  [ 2532] Ch 2 Note On            (7, vel=127)
+
+Packet 364:
+  [ 2566] Ch 3 Note Off           (5, vel=0)
+
+Packet 365:
+  [ 2567] Ch 6 Note Off           (5, vel=0)
+
+Packet 366:
+  [ 2608] Ch 2 Note On            (5, vel=127)
+
+Packet 367:
+  [ 2608] Ch 5 Note On            (5, vel=127)
+  [ 2609] Ch 3 Note On            (5, vel=127)
+  [ 2609] Ch 6 Note On            (5, vel=127)
+
+Packet 368:
+  [ 2731] Ch 3 Note Off           (5, vel=0)
+
+Packet 369:
+  [ 2731] Ch 6 Note Off           (5, vel=0)
+
+Packet 370:
+  [ 2773] Ch 3 Note On            (6, vel=127)
+
+Packet 371:
+  [ 2775] Ch 2 Note On            (6, vel=127)
+
+Packet 372:
+  [ 2786] Ch 2 Note Off           (5, vel=0)
+
+Packet 373:
+  [ 2786] Ch 5 Note Off           (5, vel=0)
+
+Packet 374:
+  [ 2920] Ch 3 Note On            (5, vel=127)
+
+Packet 375:
+  [ 2920] Ch 6 Note On            (5, vel=127)
+  [ 2921] Ch 2 Note On            (5, vel=127)
+  [ 2921] Ch 5 Note On            (5, vel=127)
+
+Packet 376:
+  [ 2943] Ch 2 Note Off           (5, vel=0)
+
+Packet 377:
+  [ 2943] Ch 5 Note Off           (5, vel=0)
+
+Packet 378:
+  [ 3029] Ch 3 Note Off           (6, vel=0)
+
+Packet 379:
+  [ 3030] Ch 2 Note Off           (6, vel=0)
+  [ 3030] Ch 3 Note Off           (7, vel=0)
+  [ 3030] Ch 6 Note Off           (7, vel=0)
+  [ 3031] Ch 2 Note Off           (7, vel=0)
+
+Packet 380:
+  [ 3091] Ch 3 Note Off           (5, vel=0)
+
+Packet 381:
+  [ 3092] Ch 6 Note Off           (5, vel=0)
+
+Packet 382:
+  [ 3121] Ch 2 Note On            (5, vel=127)
+
+Packet 383:
+  [ 3121] Ch 5 Note On            (5, vel=127)
+  [ 3122] Ch 3 Note On            (5, vel=127)
+  [ 3122] Ch 6 Note On            (5, vel=127)
+
+Packet 384:
+  [ 3528] Ch 3 Note Off           (6, vel=0)
+
+Packet 385:
+  [ 3529] Ch 2 Note Off           (6, vel=0)
+  [ 3529] Ch 3 Note On            (7, vel=127)
+  [ 3529] Ch 6 Note On            (7, vel=127)
+  [ 3530] Ch 2 Note On            (7, vel=127)
+
+Packet 386:
+  [ 4029] Ch 3 Note Off           (6, vel=0)
+
+Packet 387:
+  [ 4029] Ch 2 Note Off           (6, vel=0)
+
+Packet 388:
+  [ 4030] Ch 3 Note Off           (7, vel=0)
+  [ 4030] Ch 6 Note Off           (7, vel=0)
+  [ 4030] Ch 2 Note Off           (7, vel=0)
+
+Packet 389:
+  [ 4273] Ch 3 Note On            (6, vel=127)
+
+Packet 390:
+  [ 4275] Ch 2 Note On            (6, vel=127)
+
+Packet 391:
+  [ 4529] Ch 3 Note Off           (6, vel=0)
+
+Packet 392:
+  [ 4529] Ch 2 Note Off           (6, vel=0)
+  [ 4530] Ch 3 Note On            (7, vel=127)
+  [ 4530] Ch 6 Note On            (7, vel=127)
+  [ 4530] Ch 2 Note On            (7, vel=127)
+
+Packet 393:
+  [ 4776] Ch 3 Note On            (6, vel=127)
+
+Packet 394:
+  [ 4778] Ch 2 Note On            (6, vel=127)
+
+Packet 395:
+  [ 5032] Ch 3 Note Off           (6, vel=0)
+
+Packet 396:
+  [ 5034] Ch 2 Note Off           (6, vel=0)
+  [ 5035] Ch 3 Note Off           (7, vel=0)
+  [ 5036] Ch 6 Note Off           (7, vel=0)
+  [ 5037] Ch 2 Note Off           (7, vel=0)
+
+Packet 397:
+  [ 5276] Ch 3 Note On            (6, vel=127)
+
+Packet 398:
+  [ 5278] Ch 2 Note On            (6, vel=127)
+
+Packet 399:
+  [ 5532] Ch 3 Note Off           (6, vel=0)
+
+Packet 400:
+  [ 5534] Ch 2 Note Off           (6, vel=0)
+  [ 5535] Ch 3 Note On            (7, vel=127)
+  [ 5536] Ch 6 Note On            (7, vel=127)
+
+Packet 401:
+  [ 5534] Ch 2 Note Off           (6, vel=0)
+  [ 5535] Ch 3 Note On            (7, vel=127)
+  [ 5536] Ch 6 Note On            (7, vel=127)
+
+Packet 402:
+  [ 5537] Ch 2 Note On            (7, vel=127)
+
+Packet 403:
+  [ 5776] Ch 3 Note On            (6, vel=127)
+
+Packet 404:
+  [ 5778] Ch 2 Note On            (6, vel=127)
+

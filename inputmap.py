@@ -32,6 +32,10 @@ MIDI_NOTE_CODES = {
     0x06: "cue",
     0x05: "sync",
     0x04: "shift",
+    15: "hotcue",
+    16: "loop",
+    17: "fx",
+    18: "neural"
 }
 
 MIDI_PAD_NOTE_CODES = {

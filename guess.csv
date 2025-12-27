@@ -1,0 +1,38 @@
+ch,note,desc
+6,0,left pad 1
+6,7,left pad 8
+0,1,cent neural
+7,0,right pad 1
+7,7,right pad 8
+1,5,left sync
+1,6,left cue
+1,7,left play
+2,5,right sync
+2,6,right cue
+2,7,right play
+1,12,left phones
+1,15,left hotcue
+1,16,left loop
+1,17,left fx
+1,18,left neural
+2,12,right phones
+2,15,right hotcue
+2,16,right loop
+2,17,right fx
+2,18,right neural
+6,0,left pad1
+6,1,left pad2
+6,2,left pad3
+6,3,left pad4
+6,4,left pad5
+6,5,left pad6
+6,6,left pad7
+6,7,left pad8
+7,0,right pad1
+7,1,right pad2
+7,2,right pad3
+7,3,right pad4
+7,4,right pad5
+7,5,right pad6
+7,6,right pad7
+7,7,right pad8
